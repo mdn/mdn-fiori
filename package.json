@@ -1,7 +1,7 @@
 {
   "name": "MDN Fiori",
   "version": "0.1.0",
-  "description": "Front-End style guide and pattern library for MDN Web Docs - Built on cupper",
+  "description": "Front-End style guide and pattern library for MDN Web Docs - Built with cupper",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
