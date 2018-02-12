@@ -62,7 +62,7 @@ All SCSS variables are defined in `kuma/static/styles/includes/_vars.scss`
   </ul>
 </div>
 
-### Color in Typography
+## Color in Typography
 
 <div class="colors-container">
   <ul class="colors">
