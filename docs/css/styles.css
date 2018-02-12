@@ -713,14 +713,15 @@ h1 svg {
 /* Color palettes */
 .colors {
     display: flex;
-    height: 5rem;
+    height: 10rem;
     margin: -0.25rem;
     list-style: none;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 .colors li {
     margin: 0.25rem;
     flex: 1 0 auto;
+    flex-basis: 125px;
     position: relative;
 }
 .colors span {
@@ -732,6 +733,9 @@ h1 svg {
     position: absolute;
     bottom: 0.25rem;
     right: 0.25rem;
+}
+.colors span.var {
+    bottom: 1.6rem;
 }
 /* cross references */
 .pattern-link {

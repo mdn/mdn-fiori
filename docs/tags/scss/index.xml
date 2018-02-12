@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scss on MDN Fiori</title>
+    <link>https://schalkneethling.github.io/mdn-fiori/tags/scss/</link>
+    <description>Recent content in Scss on MDN Fiori</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://schalkneethling.github.io/mdn-fiori/tags/scss/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>-remify function</title>
+      <link>https://schalkneethling.github.io/mdn-fiori/patterns/functions/remify/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/functions/remify/</guid>
+      <description>The remify function converts pixel based units into rem based units. If you pass in any unit other than px, the exact same value will be returned.
+@function -remify($value) { $u: unit($value); $v: 0; @if $u == &#39;px&#39; { $v: $value/$body-font-size * 1rem; } @else { $v: unit($value, u); } @return $v; }  Example font-size: -remify(16px);  This will result in the following output
+font-size: 1rem;  This is currently only used internally by the set-font-size mixin.</description>
+    </item>
+    
+    <item>
+      <title>set-font-size mixin</title>
+      <link>https://schalkneethling.github.io/mdn-fiori/patterns/mixins/set-font-size/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/mixins/set-font-size/</guid>
+      <description>The set-font-size mixin takes a single value. If the value&amp;rsquo;s unit of measure is pixels, it will return two versions of the font-size rule. One will use the original pixel value, and the second will be an equivalent font size using rem.
+@mixin set-font-size($value) { font-size: $value; // if this is px it will be the fallback for the rem value, otherwise it will be the only declaration @if ($value !</description>
+    </item>
+    
+  </channel>
+</rss>
