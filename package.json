@@ -1,5 +1,5 @@
 {
-  "name": "MDN Fiori",
+  "name": "MDN-Fiori",
   "version": "0.1.0",
   "description": "Front-End style guide and pattern library for MDN Web Docs - Built with cupper",
   "main": "index.js",
