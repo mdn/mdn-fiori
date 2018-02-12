@@ -1,7 +1,7 @@
 {
-  "name": "cupper",
+  "name": "MDN Fiori",
   "version": "0.1.0",
-  "description": "A documentation builder for inclusive designers",
+  "description": "Front-End style guide and pattern library for MDN Web Docs - Built on cupper",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,14 +16,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ThePacielloGroup/cupper.git"
+    "url": "git@github.com:schalkneethling/mdn-fiori.git"
   },
-  "author": "Heydon Pickering <heydon@heydonworks.com> (http://www.heydonworks.com)",
-  "license": "ISC",
+  "author": "Mozilla",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ThePacielloGroup/cupper/issues"
+    "url": "https://github.com/schalkneethling/mdn-fiori/issues"
   },
-  "homepage": "https://github.com/ThePacielloGroup/cupper#readme",
+  "homepage": "https://github.com/schalkneethling/mdn-fiori/#readme",
   "devDependencies": {
     "pre-commit": "^1.2.2",
     "sw-precache": "^5.2.0"
