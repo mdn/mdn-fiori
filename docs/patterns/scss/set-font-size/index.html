@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://schalkneethling.github.io/mdn-fiori/patterns/scss/mixins/">
+    <link rel="canonical" href="https://schalkneethling.github.io/mdn-fiori/patterns/scss/set-font-size/">
     <link rel="apple-touch-icon" sizes="57x57" href="https://schalkneethling.github.io/mdn-fiori/images/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="https://schalkneethling.github.io/mdn-fiori/images/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="https://schalkneethling.github.io/mdn-fiori/images/apple-touch-icon-72x72.png">
@@ -30,7 +30,7 @@
     </style>
     <title>
       
-        SCSS Mixins | MDN Fiori
+        set-font-size mixin | MDN Fiori
       
     </title>
     
@@ -187,8 +187,17 @@
                       </li>
                     
                       <li>
-                        <h3>Scsses</h3>
+                        <h3>SCSS</h3>
                         <ul>
+                          
+                            <li class="pattern">
+                              <a href="https://schalkneethling.github.io/mdn-fiori/patterns/scss/remify/" >
+                                <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+                                  <use xlink:href="#bookmark"></use>
+                                </svg>
+                                <span class="text">-remify function</span>
+                              </a>
+                            </li>
                           
                             <li class="pattern">
                               <a href="https://schalkneethling.github.io/mdn-fiori/patterns/scss/variables/" >
@@ -196,6 +205,24 @@
                                   <use xlink:href="#bookmark"></use>
                                 </svg>
                                 <span class="text">Variables in SCSS</span>
+                              </a>
+                            </li>
+                          
+                            <li class="pattern">
+                              <a href="https://schalkneethling.github.io/mdn-fiori/patterns/scss/bidi/" >
+                                <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+                                  <use xlink:href="#bookmark"></use>
+                                </svg>
+                                <span class="text">bidi - l10n utilities</span>
+                              </a>
+                            </li>
+                          
+                            <li class="pattern">
+                              <a href="https://schalkneethling.github.io/mdn-fiori/patterns/scss/set-font-size/" aria-current="page">
+                                <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+                                  <use xlink:href="#bookmark"></use>
+                                </svg>
+                                <span class="text">set-font-size mixin</span>
                               </a>
                             </li>
                           
@@ -213,35 +240,73 @@
           
   <main id="main">
     <h1>
-      SCSS Mixins
-    </h1>
-    <ul class="patterns-list">
-      
-          <li>
-  <h2>
-    <a href="https://schalkneethling.github.io/mdn-fiori/patterns/scss/mixins/bidi/">
-      <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-        <use xlink:href="#bookmark"></use>
-      </svg>
-      bidi - l10n utilities
-    </a>
-  </h2>
-</li>
-
-      
-          <li>
-  <h2>
-    <a href="https://schalkneethling.github.io/mdn-fiori/patterns/scss/mixins/set-font-size/">
-      <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
         <use xlink:href="#bookmark"></use>
       </svg>
       set-font-size mixin
-    </a>
-  </h2>
-</li>
-
+    </h1>
+    
+      <div class="tags">
+        <strong aria-hidden="true">Tags: </strong>
+        <ul aria-label="tags">
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              <a href="https://schalkneethling.github.io/mdn-fiori/tags/mixins">mixins</a>
+            </li>
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              <a href="https://schalkneethling.github.io/mdn-fiori/tags/scss">scss</a>
+            </li>
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              <a href="https://schalkneethling.github.io/mdn-fiori/tags/typography">typography</a>
+            </li>
+          
+        </ul>
+      </div>
+    
+    
       
-    </ul>
+
+
+    
+    
+
+<p>The <code>set-font-size</code> mixin takes a single value. If the value&rsquo;s unit of measure is pixels, it will return two versions of the <code>font-size</code> rule. One will use the original pixel value, and the second will be an equivalent font size using <code>rem</code>.</p>
+
+<pre><code class="language-css">@mixin set-font-size($value) {
+    font-size: $value; // if this is px it will be the fallback for the rem value, otherwise it will be the only declaration
+
+    @if ($value != 'inherit') {
+        // make sure we're working with px otherwise remify will just spit out what we spat out before
+        $u: unit($value);
+        @if $u == 'px' {
+            font-size: -remify($value);
+        }
+    }
+}
+</code></pre>
+
+<h2 id="example">Example</h2>
+
+<pre><code class="language-css">@include set-font-size: 32px;
+</code></pre>
+
+<p>This will result in the following output</p>
+
+<pre><code class="language-css">font-size: 32px;
+font-size: 2rem;
+</code></pre>
+
   </main>
 
           <footer role="contentinfo">

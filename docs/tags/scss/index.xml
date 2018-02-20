@@ -12,10 +12,10 @@
     
     <item>
       <title>-remify function</title>
-      <link>https://schalkneethling.github.io/mdn-fiori/patterns/scss/functions/remify/</link>
+      <link>https://schalkneethling.github.io/mdn-fiori/patterns/scss/remify/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/scss/functions/remify/</guid>
+      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/scss/remify/</guid>
       <description>The remify function converts pixel based units into rem based units. If you pass in any unit other than px, the exact same value will be returned.
 @function -remify($value) { $u: unit($value); $v: 0; @if $u == &#39;px&#39; { $v: $value/$body-font-size * 1rem; } @else { $v: unit($value, u); } @return $v; }  Example font-size: -remify(16px);  This will result in the following output
 font-size: 1rem;  This is currently only used internally by the set-font-size mixin.</description>
@@ -23,10 +23,10 @@ font-size: 1rem;  This is currently only used internally by the set-font-size mi
     
     <item>
       <title>set-font-size mixin</title>
-      <link>https://schalkneethling.github.io/mdn-fiori/patterns/scss/mixins/set-font-size/</link>
+      <link>https://schalkneethling.github.io/mdn-fiori/patterns/scss/set-font-size/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/scss/mixins/set-font-size/</guid>
+      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/scss/set-font-size/</guid>
       <description>The set-font-size mixin takes a single value. If the value&amp;rsquo;s unit of measure is pixels, it will return two versions of the font-size rule. One will use the original pixel value, and the second will be an equivalent font size using rem.
 @mixin set-font-size($value) { font-size: $value; // if this is px it will be the fallback for the rem value, otherwise it will be the only declaration @if ($value !</description>
     </item>

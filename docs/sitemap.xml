@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/scss/functions/remify/</loc>
+    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/scss/remify/</loc>
   </url>
   
   <url>
@@ -54,20 +54,11 @@
   </url>
   
   <url>
-    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/scss/functions/</loc>
-  </url>
-  
-  <url>
-    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/scss/mixins/</loc>
+    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/scss/</loc>
   </url>
   
   <url>
     <loc>https://schalkneethling.github.io/mdn-fiori/tags/scss/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/scss/</loc>
     <priority>0</priority>
   </url>
   
@@ -94,11 +85,11 @@
   </url>
   
   <url>
-    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/scss/mixins/bidi/</loc>
+    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/scss/bidi/</loc>
   </url>
   
   <url>
-    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/scss/mixins/set-font-size/</loc>
+    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/scss/set-font-size/</loc>
   </url>
   
 </urlset>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://schalkneethling.github.io/mdn-fiori/patterns/scss/mixins/set-font-size/">
+    <link rel="canonical" href="https://schalkneethling.github.io/mdn-fiori/patterns/scss/bidi/">
     <link rel="apple-touch-icon" sizes="57x57" href="https://schalkneethling.github.io/mdn-fiori/images/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="https://schalkneethling.github.io/mdn-fiori/images/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="https://schalkneethling.github.io/mdn-fiori/images/apple-touch-icon-72x72.png">
@@ -30,7 +30,7 @@
     </style>
     <title>
       
-        set-font-size mixin | MDN Fiori
+        bidi - l10n utilities | MDN Fiori
       
     </title>
     
@@ -187,8 +187,17 @@
                       </li>
                     
                       <li>
-                        <h3>Scsses</h3>
+                        <h3>SCSS</h3>
                         <ul>
+                          
+                            <li class="pattern">
+                              <a href="https://schalkneethling.github.io/mdn-fiori/patterns/scss/remify/" >
+                                <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+                                  <use xlink:href="#bookmark"></use>
+                                </svg>
+                                <span class="text">-remify function</span>
+                              </a>
+                            </li>
                           
                             <li class="pattern">
                               <a href="https://schalkneethling.github.io/mdn-fiori/patterns/scss/variables/" >
@@ -196,6 +205,24 @@
                                   <use xlink:href="#bookmark"></use>
                                 </svg>
                                 <span class="text">Variables in SCSS</span>
+                              </a>
+                            </li>
+                          
+                            <li class="pattern">
+                              <a href="https://schalkneethling.github.io/mdn-fiori/patterns/scss/bidi/" aria-current="page">
+                                <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+                                  <use xlink:href="#bookmark"></use>
+                                </svg>
+                                <span class="text">bidi - l10n utilities</span>
+                              </a>
+                            </li>
+                          
+                            <li class="pattern">
+                              <a href="https://schalkneethling.github.io/mdn-fiori/patterns/scss/set-font-size/" >
+                                <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+                                  <use xlink:href="#bookmark"></use>
+                                </svg>
+                                <span class="text">set-font-size mixin</span>
                               </a>
                             </li>
                           
@@ -216,7 +243,7 @@
       <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
         <use xlink:href="#bookmark"></use>
       </svg>
-      set-font-size mixin
+      bidi - l10n utilities
     </h1>
     
       <div class="tags">
@@ -234,14 +261,7 @@
               <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
                 <use xlink:href="#tag"></use>
               </svg>
-              <a href="https://schalkneethling.github.io/mdn-fiori/tags/scss">scss</a>
-            </li>
-          
-            <li>
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              <a href="https://schalkneethling.github.io/mdn-fiori/tags/typography">typography</a>
+              <a href="https://schalkneethling.github.io/mdn-fiori/tags/l10n">l10n</a>
             </li>
           
         </ul>
@@ -250,34 +270,78 @@
     
       
 
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Table of contents</h2>
+    <ol>
+      
+        <li>
+          <a href="#example-input">
+            Example input:
+          </a>
+        </li>
+      
+        <li>
+          <a href="#example-output">
+            Example output:
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
 
     
     
 
-<p>The <code>set-font-size</code> mixin takes a single value. If the value&rsquo;s unit of measure is pixels, it will return two versions of the <code>font-size</code> rule. One will use the original pixel value, and the second will be an equivalent font size using <code>rem</code>.</p>
+<p>The bidi mixins are used to declare both the LTR and RTL values for a property together and output appropriate declarations. This makes it easier to maintain the RTL version since you only have to update values in one place.</p>
 
-<pre><code class="language-css">@mixin set-font-size($value) {
-    font-size: $value; // if this is px it will be the fallback for the rem value, otherwise it will be the only declaration
+<p>accepts: a list of lists - each list must have 3 or 4 values</p>
 
-    @if ($value != 'inherit') {
-        // make sure we're working with px otherwise remify will just spit out what we spat out before
-        $u: unit($value);
-        @if $u == 'px' {
-            font-size: -remify($value);
-        }
-    }
+<p>A list with three properties overrides the ltr value in rtl locales</p>
+
+<pre><code>@include bidi(((float, left, right),));
+</code></pre>
+
+<p>Results in:</p>
+
+<pre><code>LTR: float: left;
+RTL: float: right;
+</code></pre>
+
+<p>A list with four properties overrides the ltr value in rtl locales AND provides a new rtl only property value</p>
+
+<pre><code>@include bidi(((margin-right, 20px, margin-left, 0),));
+</code></pre>
+
+<p>Results in:</p>
+
+<pre><code>LTR: margin-right: 10px;
+RTL: margin-right: 0;
+     margin-left: 10px;
+</code></pre>
+
+<h2 id="example-input">Example input:</h2>
+
+<pre><code>.test {
+    @include bidi((
+        (float, left, right),
+        (margin-right, ($grid-spacing / 2), margin-left, 0),
+    ));
 }
 </code></pre>
 
-<h2 id="example">Example</h2>
+<h2 id="example-output">Example output:</h2>
 
-<pre><code class="language-css">@include set-font-size: 32px;
-</code></pre>
+<pre><code>.test {
+    float: left;
+    margin-right: 10px;
+}
 
-<p>This will result in the following output</p>
-
-<pre><code class="language-css">font-size: 32px;
-font-size: 2rem;
+html[dir='rtl'] .test {
+    float: right;
+    margin-right: 0;
+    margin-left: 10px;
+}
 </code></pre>
 
   </main>

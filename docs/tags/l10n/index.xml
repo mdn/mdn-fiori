@@ -12,10 +12,10 @@
     
     <item>
       <title>bidi - l10n utilities</title>
-      <link>https://schalkneethling.github.io/mdn-fiori/patterns/scss/mixins/bidi/</link>
+      <link>https://schalkneethling.github.io/mdn-fiori/patterns/scss/bidi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/scss/mixins/bidi/</guid>
+      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/scss/bidi/</guid>
       <description>The bidi mixins are used to declare both the LTR and RTL values for a property together and output appropriate declarations. This makes it easier to maintain the RTL version since you only have to update values in one place.
 accepts: a list of lists - each list must have 3 or 4 values
 A list with three properties overrides the ltr value in rtl locales
