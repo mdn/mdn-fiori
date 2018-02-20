@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scsses on MDN Fiori</title>
+    <link>https://schalkneethling.github.io/mdn-fiori/patterns/scss/</link>
+    <description>Recent content in Scsses on MDN Fiori</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://schalkneethling.github.io/mdn-fiori/patterns/scss/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Variables in SCSS</title>
+      <link>https://schalkneethling.github.io/mdn-fiori/patterns/scss/variables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/scss/variables/</guid>
+      <description> All SCSS variables are defined in kuma/static/styles/includes/_vars.scss
+Colours Base Colours $red #e66465  $orange #f69d3c  $yellow #f6b73c  $green #4d9f0c  $blue #3f87a6  $purple #9198e5  $grey #696969    Lighter Base Shades $red-light #ffe7e8  $orange-light #ffe8d4  $yellow-light #fff3d4  $green-light #ebf8e1  $blue-light #e4f0f5  $purple-light #d7d9f2  $grey-light #eee    Darkened Base Shades $red-dark #b65456  $orange-dark #b27229  $yellow-dark #b28529  $green-dark #3a7408  $blue-dark #29627e  $purple-dark #6f74b2  $grey-dark #4c4c4c    Dark Base Shades $red-vdark #5d3739  $orange-vdark #332206  $yellow-vdark #332807  $green-vdark #162300  $blue-vdark #001d33  $purple-vdark #303253  $grey-vdark #151515    Color in Typography $text-color #333333  $link-color #3f87a6    $bg-dark #222    Spacing  $gutter-width: 24px $content-block-margin: 24px $mobile-center-spacing: 15px  </description>
+    </item>
+    
+  </channel>
+</rss>

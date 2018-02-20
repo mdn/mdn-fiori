@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://schalkneethling.github.io/mdn-fiori/patterns/functions/">
+    <link rel="canonical" href="https://schalkneethling.github.io/mdn-fiori/patterns/css/formatting/">
     <link rel="apple-touch-icon" sizes="57x57" href="https://schalkneethling.github.io/mdn-fiori/images/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="https://schalkneethling.github.io/mdn-fiori/images/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="https://schalkneethling.github.io/mdn-fiori/images/apple-touch-icon-72x72.png">
@@ -30,7 +30,7 @@
     </style>
     <title>
       
-        SCSS Functions | MDN Fiori
+        Formatting | MDN Fiori
       
     </title>
     
@@ -160,26 +160,26 @@
                 
                   <ul id="patterns-list">
                     
-                      <li class="pattern">
-                        <a href="https://schalkneethling.github.io/mdn-fiori/patterns/variables/" >
-                          <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
-                            <use xlink:href="#bookmark"></use>
-                          </svg>
-                          <span class="text">Variables in SCSS</span>
-                        </a>
-                      </li>
-                    
                     
                       <li>
-                        <h3>SCSS Functions</h3>
+                        <h3>CSS</h3>
                         <ul>
                           
                             <li class="pattern">
-                              <a href="https://schalkneethling.github.io/mdn-fiori/patterns/functions/remify/" >
+                              <a href="https://schalkneethling.github.io/mdn-fiori/patterns/css/formatting/" aria-current="page">
                                 <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
                                   <use xlink:href="#bookmark"></use>
                                 </svg>
-                                <span class="text">-remify function</span>
+                                <span class="text">Formatting</span>
+                              </a>
+                            </li>
+                          
+                            <li class="pattern">
+                              <a href="https://schalkneethling.github.io/mdn-fiori/patterns/css/terminology/" >
+                                <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+                                  <use xlink:href="#bookmark"></use>
+                                </svg>
+                                <span class="text">Terminology</span>
                               </a>
                             </li>
                           
@@ -187,24 +187,15 @@
                       </li>
                     
                       <li>
-                        <h3>SCSS Mixins</h3>
+                        <h3>Scsses</h3>
                         <ul>
                           
                             <li class="pattern">
-                              <a href="https://schalkneethling.github.io/mdn-fiori/patterns/mixins/bidi/" >
+                              <a href="https://schalkneethling.github.io/mdn-fiori/patterns/scss/variables/" >
                                 <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
                                   <use xlink:href="#bookmark"></use>
                                 </svg>
-                                <span class="text">bidi - l10n utilities</span>
-                              </a>
-                            </li>
-                          
-                            <li class="pattern">
-                              <a href="https://schalkneethling.github.io/mdn-fiori/patterns/mixins/set-font-size/" >
-                                <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-                                  <use xlink:href="#bookmark"></use>
-                                </svg>
-                                <span class="text">set-font-size mixin</span>
+                                <span class="text">Variables in SCSS</span>
                               </a>
                             </li>
                           
@@ -222,23 +213,93 @@
           
   <main id="main">
     <h1>
-      SCSS Functions
-    </h1>
-    <ul class="patterns-list">
-      
-          <li>
-  <h2>
-    <a href="https://schalkneethling.github.io/mdn-fiori/patterns/functions/remify/">
-      <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
         <use xlink:href="#bookmark"></use>
       </svg>
-      -remify function
-    </a>
-  </h2>
-</li>
-
+      Formatting
+    </h1>
+    
+      <div class="tags">
+        <strong aria-hidden="true">Tags: </strong>
+        <ul aria-label="tags">
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              <a href="https://schalkneethling.github.io/mdn-fiori/tags/code-style">code style</a>
+            </li>
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              <a href="https://schalkneethling.github.io/mdn-fiori/tags/css">css</a>
+            </li>
+          
+        </ul>
+      </div>
+    
+    
       
-    </ul>
+
+
+    
+    
+
+<h2 id="formatting">Formatting</h2>
+
+<ul>
+<li>Use 4 spaces (no tabs) for indentation</li>
+<li>Prefer dashes over camelCasing in class names.</li>
+<li>Do not use ID selectors</li>
+<li>When using multiple selectors in a <a href="https://schalkneethling.github.io/mdn-fiori/patterns/css/terminology/#rule-declaration">rule declarations</a>, give each selector its own line.</li>
+<li>Put a space before the opening brace <code>{</code> in rule declarations</li>
+<li>In properties, put a space after, but not before, the <code>:</code> character.</li>
+<li>Put closing braces <code>}</code> of <a href="https://schalkneethling.github.io/mdn-fiori/patterns/css/terminology/#rule-declaration">rule declarations</a> on a new line</li>
+<li>Put blank lines between <a href="https://schalkneethling.github.io/mdn-fiori/patterns/css/terminology/#rule-declaration">rule declarations</a></li>
+<li>Avoid the use of <code>!important</code> ~ <a href="https://css-tricks.com/when-using-important-is-the-right-choice/">When Using !important is The Right Choice</a></li>
+</ul>
+
+<h4 id="bad">Bad</h4>
+
+<pre><code class="language-css">.avatar{
+    border-radius:50%;
+    border:2px solid white; }
+.no, .nope, .not_good {
+    // ...
+}
+#please_no {
+  // ...
+}
+
+.some-class {
+    border-radius: 50%; !important
+}
+</code></pre>
+
+<h4 id="good">Good</h4>
+
+<pre><code class="language-css">.avatar {
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.no,
+.nope,
+.not_good {
+    // ...
+}
+</code></pre>
+
+<h3 id="why-no-id-selectors">Why No ID Selectors</h3>
+
+<p>While it is possible to select elements by ID in CSS, it should generally be considered an anti-pattern. ID selectors introduce an <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity">unnecessarily high level of specificity</a> to your rule declarations, and they are not reusable.</p>
+
+<p>For more on this subject, read <a href="http://csswizardry.com/2014/07/hacks-for-dealing-with-specificity/">CSS Wizardry&rsquo;s article on dealing with specificity</a>.</p>
+
+<p><a href="https://github.com/airbnb/css#id-selectors">kudos: AirBnB</a></p>
+
   </main>
 
           <footer role="contentinfo">

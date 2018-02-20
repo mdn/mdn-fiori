@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SCSS Mixins on MDN Fiori</title>
-    <link>https://schalkneethling.github.io/mdn-fiori/patterns/mixins/</link>
+    <link>https://schalkneethling.github.io/mdn-fiori/patterns/scss/mixins/</link>
     <description>Recent content in SCSS Mixins on MDN Fiori</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://schalkneethling.github.io/mdn-fiori/patterns/mixins/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://schalkneethling.github.io/mdn-fiori/patterns/scss/mixins/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>bidi - l10n utilities</title>
-      <link>https://schalkneethling.github.io/mdn-fiori/patterns/mixins/bidi/</link>
+      <link>https://schalkneethling.github.io/mdn-fiori/patterns/scss/mixins/bidi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/mixins/bidi/</guid>
+      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/scss/mixins/bidi/</guid>
       <description>The bidi mixins are used to declare both the LTR and RTL values for a property together and output appropriate declarations. This makes it easier to maintain the RTL version since you only have to update values in one place.
 accepts: a list of lists - each list must have 3 or 4 values
 A list with three properties overrides the ltr value in rtl locales
@@ -24,10 +24,10 @@ A list with three properties overrides the ltr value in rtl locales
     
     <item>
       <title>set-font-size mixin</title>
-      <link>https://schalkneethling.github.io/mdn-fiori/patterns/mixins/set-font-size/</link>
+      <link>https://schalkneethling.github.io/mdn-fiori/patterns/scss/mixins/set-font-size/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/mixins/set-font-size/</guid>
+      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/scss/mixins/set-font-size/</guid>
       <description>The set-font-size mixin takes a single value. If the value&amp;rsquo;s unit of measure is pixels, it will return two versions of the font-size rule. One will use the original pixel value, and the second will be an equivalent font size using rem.
 @mixin set-font-size($value) { font-size: $value; // if this is px it will be the fallback for the rem value, otherwise it will be the only declaration @if ($value !</description>
     </item>

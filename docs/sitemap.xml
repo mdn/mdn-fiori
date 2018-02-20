@@ -3,7 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/functions/remify/</loc>
+    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/scss/functions/remify/</loc>
+  </url>
+  
+  <url>
+    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/css/</loc>
   </url>
   
   <url>
@@ -12,7 +16,21 @@
   </url>
   
   <url>
+    <loc>https://schalkneethling.github.io/mdn-fiori/tags/code-style/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://schalkneethling.github.io/mdn-fiori/tags/css/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://schalkneethling.github.io/mdn-fiori/print-version/</loc>
+  </url>
+  
+  <url>
+    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/css/formatting/</loc>
   </url>
   
   <url>
@@ -26,10 +44,6 @@
   </url>
   
   <url>
-    <loc>https://schalkneethling.github.io/mdn-fiori/</loc>
-  </url>
-  
-  <url>
     <loc>https://schalkneethling.github.io/mdn-fiori/tags/mixins/</loc>
     <priority>0</priority>
   </url>
@@ -40,15 +54,20 @@
   </url>
   
   <url>
-    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/functions/</loc>
+    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/scss/functions/</loc>
   </url>
   
   <url>
-    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/mixins/</loc>
+    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/scss/mixins/</loc>
   </url>
   
   <url>
     <loc>https://schalkneethling.github.io/mdn-fiori/tags/scss/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/scss/</loc>
     <priority>0</priority>
   </url>
   
@@ -58,20 +77,28 @@
   </url>
   
   <url>
+    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/css/terminology/</loc>
+  </url>
+  
+  <url>
+    <loc>https://schalkneethling.github.io/mdn-fiori/</loc>
+  </url>
+  
+  <url>
     <loc>https://schalkneethling.github.io/mdn-fiori/tags/typography/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/variables/</loc>
+    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/scss/variables/</loc>
   </url>
   
   <url>
-    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/mixins/bidi/</loc>
+    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/scss/mixins/bidi/</loc>
   </url>
   
   <url>
-    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/mixins/set-font-size/</loc>
+    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/scss/mixins/set-font-size/</loc>
   </url>
   
 </urlset>
