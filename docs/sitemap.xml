@@ -52,6 +52,10 @@
   </url>
   
   <url>
+    <loc>https://schalkneethling.github.io/mdn-fiori/</loc>
+  </url>
+  
+  <url>
     <loc>https://schalkneethling.github.io/mdn-fiori/tags/mixins/</loc>
     <priority>0</priority>
   </url>
@@ -73,10 +77,6 @@
   <url>
     <loc>https://schalkneethling.github.io/mdn-fiori/tags/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://schalkneethling.github.io/mdn-fiori/</loc>
   </url>
   
   <url>
