@@ -3,6 +3,14 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/css/terminology/</loc>
+  </url>
+  
+  <url>
+    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/scss/variables/</loc>
+  </url>
+  
+  <url>
     <loc>https://schalkneethling.github.io/mdn-fiori/patterns/scss/remify/</loc>
   </url>
   
@@ -68,20 +76,12 @@
   </url>
   
   <url>
-    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/css/terminology/</loc>
-  </url>
-  
-  <url>
     <loc>https://schalkneethling.github.io/mdn-fiori/</loc>
   </url>
   
   <url>
     <loc>https://schalkneethling.github.io/mdn-fiori/tags/typography/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/scss/variables/</loc>
   </url>
   
   <url>

@@ -11,6 +11,26 @@
     
     
     <item>
+      <title>Terminology</title>
+      <link>https://schalkneethling.github.io/mdn-fiori/patterns/css/terminology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/css/terminology/</guid>
+      <description>Rule Declaration A rule declaration generally consist of one or more selectors, and a list of properties. For example:
+.class-name { display: block; margin: 0; }  Selector A selector matches the element(s) to which the style rules will be applied. Selectors can be any combination of a class name, a HTML attribute as well as psuedo-classes and psuedo-elements. For more details on selectors, see the W3C CSS selectors specification.</description>
+    </item>
+    
+    <item>
+      <title>Variables in SCSS</title>
+      <link>https://schalkneethling.github.io/mdn-fiori/patterns/scss/variables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/scss/variables/</guid>
+      <description> All SCSS variables are defined in kuma/static/styles/includes/_vars.scss
+Colours Base Colours $red #e66465  $orange #f69d3c  $yellow #f6b73c  $green #4d9f0c  $blue #3f87a6  $purple #9198e5  $grey #696969    Lighter Base Shades $red-light #ffe7e8  $orange-light #ffe8d4  $yellow-light #fff3d4  $green-light #ebf8e1  $blue-light #e4f0f5  $purple-light #d7d9f2  $grey-light #eee    Darkened Base Shades $red-dark #b65456  $orange-dark #b27229  $yellow-dark #b28529  $green-dark #3a7408  $blue-dark #29627e  $purple-dark #6f74b2  $grey-dark #4c4c4c    Dark Base Shades $red-vdark #5d3739  $orange-vdark #332206  $yellow-vdark #332807  $green-vdark #162300  $blue-vdark #001d33  $purple-vdark #303253  $grey-vdark #151515    Color in Typography $text-color #333333  $link-color #3f87a6    $bg-dark #222    Spacing  $gutter-width: 24px $content-block-margin: 24px $mobile-center-spacing: 15px  </description>
+    </item>
+    
+    <item>
       <title>-remify function</title>
       <link>https://schalkneethling.github.io/mdn-fiori/patterns/scss/remify/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -37,26 +57,6 @@ font-size: 1rem;  This is currently only used internally by the set-font-size mi
       
       <guid>https://schalkneethling.github.io/mdn-fiori/patterns/css/formatting/</guid>
       <description>Formatting  Use 4 spaces (no tabs) for indentation Prefer dashes over camelCasing in class names. Do not use ID selectors When using multiple selectors in a rule declarations, give each selector its own line. Put a space before the opening brace { in rule declarations In properties, put a space after, but not before, the : character. Put closing braces } of rule declarations on a new line Put blank lines between rule declarations Avoid the use of !</description>
-    </item>
-    
-    <item>
-      <title>Terminology</title>
-      <link>https://schalkneethling.github.io/mdn-fiori/patterns/css/terminology/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/css/terminology/</guid>
-      <description>Rule Declaration A rule declaration generally consist of one or more selectors, and a list of properties. For example:
-.class-name { display: block; margin: 0; }  Selector A selector matches the element(s) to which the style rules will be applied. Selectors can be any combination of a class name, a HTML attribute as well as psuedo-classes and psuedo-elements. For more details on selectors, see the W3C CSS selectors specification.</description>
-    </item>
-    
-    <item>
-      <title>Variables in SCSS</title>
-      <link>https://schalkneethling.github.io/mdn-fiori/patterns/scss/variables/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/scss/variables/</guid>
-      <description> All SCSS variables are defined in kuma/static/styles/includes/_vars.scss
-Colours Base Colours $red #e66465  $orange #f69d3c  $yellow #f6b73c  $green #4d9f0c  $blue #3f87a6  $purple #9198e5  $grey #696969    Lighter Base Shades $red-light #ffe7e8  $orange-light #ffe8d4  $yellow-light #fff3d4  $green-light #ebf8e1  $blue-light #e4f0f5  $purple-light #d7d9f2  $grey-light #eee    Darkened Base Shades $red-dark #b65456  $orange-dark #b27229  $yellow-dark #b28529  $green-dark #3a7408  $blue-dark #29627e  $purple-dark #6f74b2  $grey-dark #4c4c4c    Dark Base Shades $red-vdark #5d3739  $orange-vdark #332206  $yellow-vdark #332807  $green-vdark #162300  $blue-vdark #001d33  $purple-vdark #303253  $grey-vdark #151515    Color in Typography $text-color #333333  $link-color #3f87a6    $bg-dark #222    Spacing  $gutter-width: 24px $content-block-margin: 24px $mobile-center-spacing: 15px  </description>
     </item>
     
     <item>

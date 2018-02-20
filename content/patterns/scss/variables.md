@@ -1,5 +1,6 @@
 +++
 title = "Variables in SCSS"
+weight = 1
 +++
 
 All SCSS variables are defined in `kuma/static/styles/includes/_vars.scss`

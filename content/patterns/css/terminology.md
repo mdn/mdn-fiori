@@ -1,6 +1,7 @@
 +++
 title = "Terminology"
 tags = ["code style", "css"]
+weight = 1
 +++
 
 ## Rule Declaration
