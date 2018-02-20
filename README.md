@@ -1,3 +1,3 @@
-# Your Documentation's README
+# MDN-Fiori
 
-Please fill me out!
+Front-End style guide and pattern library for MDN Web Docs - [Built with cupper](https://github.com/ThePacielloGroup/cupper)
