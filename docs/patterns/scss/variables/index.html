@@ -30,7 +30,7 @@
     </style>
     <title>
       
-        Variables in SCSS | MDN Fiori
+        Colour Variables | MDN Fiori
       
     </title>
     
@@ -195,7 +195,16 @@
                                 <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
                                   <use xlink:href="#bookmark"></use>
                                 </svg>
-                                <span class="text">Variables in SCSS</span>
+                                <span class="text">Colour Variables</span>
+                              </a>
+                            </li>
+                          
+                            <li class="pattern">
+                              <a href="https://schalkneethling.github.io/mdn-fiori/patterns/scss/spacing/" >
+                                <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+                                  <use xlink:href="#bookmark"></use>
+                                </svg>
+                                <span class="text">Spacing Variables</span>
                               </a>
                             </li>
                           
@@ -243,7 +252,7 @@
       <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
         <use xlink:href="#bookmark"></use>
       </svg>
-      Variables in SCSS
+      Colour Variables
     </h1>
     
     
@@ -266,8 +275,8 @@
         </li>
       
         <li>
-          <a href="#spacing">
-            Spacing
+          <a href="#background-colours">
+            Background Colours
           </a>
         </li>
       
@@ -278,216 +287,193 @@
     
     
 
-<p>All SCSS variables are defined in <code>kuma/static/styles/includes/_vars.scss</code></p>
+<p>All SCSS variables are defined in <a href="https://github.com/mozilla/kuma/blob/master/kuma/static/styles/includes/_vars.scss">kuma/static/styles/includes/_vars.scss</a></p>
 
 <h2 id="colours">Colours</h2>
 
 <h3 id="base-colours">Base Colours</h3>
 
-<div class="colors-container">
-  <ul class="colors">
-    <li style="background-color: #e66465; border: 1px solid #111">
-  <span class="var">$red</span>
-  <span class="color">#e66465</span>
+<ul class="colors">
+    <li>
+  <div class="colors-swatch" style="background-color: #e66465;"></div>
+  <p>$red | #e66465</p>
 </li>
 
-    <li style="background-color: #f69d3c; border: 1px solid #111">
-  <span class="var">$orange</span>
-  <span class="color">#f69d3c</span>
+    <li>
+  <div class="colors-swatch" style="background-color: #f69d3c;"></div>
+  <p>$orange | #f69d3c</p>
 </li>
 
-    <li style="background-color: #f6b73c; border: 1px solid #111">
-  <span class="var">$yellow</span>
-  <span class="color">#f6b73c</span>
+    <li>
+  <div class="colors-swatch" style="background-color: #f6b73c;"></div>
+  <p>$yellow | #f6b73c</p>
 </li>
 
-    <li style="background-color: #4d9f0c; border: 1px solid #111">
-  <span class="var">$green</span>
-  <span class="color">#4d9f0c</span>
+    <li>
+  <div class="colors-swatch" style="background-color: #4d9f0c;"></div>
+  <p>$green | #4d9f0c</p>
 </li>
 
-    <li style="background-color: #3f87a6; border: 1px solid #111">
-  <span class="var">$blue</span>
-  <span class="color">#3f87a6</span>
+    <li>
+  <div class="colors-swatch" style="background-color: #3f87a6;"></div>
+  <p>$blue | #3f87a6</p>
 </li>
 
-    <li style="background-color: #9198e5; border: 1px solid #111">
-  <span class="var">$purple</span>
-  <span class="color">#9198e5</span>
+    <li>
+  <div class="colors-swatch" style="background-color: #9198e5;"></div>
+  <p>$purple | #9198e5</p>
 </li>
 
-    <li style="background-color: #696969; border: 1px solid #111">
-  <span class="var">$grey</span>
-  <span class="color">#696969</span>
+    <li>
+  <div class="colors-swatch" style="background-color: #696969;"></div>
+  <p>$grey | #696969</p>
 </li>
 
-  </ul>
-</div>
+</ul>
 
 <h3 id="lighter-base-shades">Lighter Base Shades</h3>
 
-<div class="colors-container">
-  <ul class="colors">
-    <li style="background-color: #ffe7e8; border: 1px solid #111">
-  <span class="var">$red-light</span>
-  <span class="color">#ffe7e8</span>
+<ul class="colors">
+  <li>
+  <div class="colors-swatch" style="background-color: #ffe7e8;"></div>
+  <p>$red-light | #ffe7e8</p>
 </li>
 
-    <li style="background-color: #ffe8d4; border: 1px solid #111">
-  <span class="var">$orange-light</span>
-  <span class="color">#ffe8d4</span>
+  <li>
+  <div class="colors-swatch" style="background-color: #ffe8d4;"></div>
+  <p>$orange-light | #ffe8d4</p>
 </li>
 
-    <li style="background-color: #fff3d4; border: 1px solid #111">
-  <span class="var">$yellow-light</span>
-  <span class="color">#fff3d4</span>
+  <li>
+  <div class="colors-swatch" style="background-color: #fff3d4;"></div>
+  <p>$yellow-light | #fff3d4</p>
 </li>
 
-    <li style="background-color: #ebf8e1; border: 1px solid #111">
-  <span class="var">$green-light</span>
-  <span class="color">#ebf8e1</span>
+  <li>
+  <div class="colors-swatch" style="background-color: #ebf8e1;"></div>
+  <p>$green-light | #ebf8e1</p>
 </li>
 
-    <li style="background-color: #e4f0f5; border: 1px solid #111">
-  <span class="var">$blue-light</span>
-  <span class="color">#e4f0f5</span>
+  <li>
+  <div class="colors-swatch" style="background-color: #e4f0f5;"></div>
+  <p>$blue-light | #e4f0f5</p>
 </li>
 
-    <li style="background-color: #d7d9f2; border: 1px solid #111">
-  <span class="var">$purple-light</span>
-  <span class="color">#d7d9f2</span>
+  <li>
+  <div class="colors-swatch" style="background-color: #d7d9f2;"></div>
+  <p>$purple-light | #d7d9f2</p>
 </li>
 
-    <li style="background-color: #eee; border: 1px solid #111">
-  <span class="var">$grey-light</span>
-  <span class="color">#eee</span>
+  <li>
+  <div class="colors-swatch" style="background-color: #eee;"></div>
+  <p>$grey-light | #eee</p>
 </li>
 
-  </ul>
-</div>
+</ul>
 
 <h3 id="darkened-base-shades">Darkened Base Shades</h3>
 
-<div class="colors-container">
-  <ul class="colors">
-    <li style="background-color: #b65456; border: 1px solid #111">
-  <span class="var">$red-dark</span>
-  <span class="color">#b65456</span>
+<ul class="colors">
+  <li>
+  <div class="colors-swatch" style="background-color: #b65456;"></div>
+  <p>$red-dark | #b65456</p>
 </li>
 
-    <li style="background-color: #b27229; border: 1px solid #111">
-  <span class="var">$orange-dark</span>
-  <span class="color">#b27229</span>
+  <li>
+  <div class="colors-swatch" style="background-color: #b27229;"></div>
+  <p>$orange-dark | #b27229</p>
 </li>
 
-    <li style="background-color: #b28529; border: 1px solid #111">
-  <span class="var">$yellow-dark</span>
-  <span class="color">#b28529</span>
+  <li>
+  <div class="colors-swatch" style="background-color: #b28529;"></div>
+  <p>$yellow-dark | #b28529</p>
 </li>
 
-    <li style="background-color: #3a7408; border: 1px solid #111">
-  <span class="var">$green-dark</span>
-  <span class="color">#3a7408</span>
+  <li>
+  <div class="colors-swatch" style="background-color: #3a7408;"></div>
+  <p>$green-dark | #3a7408</p>
 </li>
 
-    <li style="background-color: #29627e; border: 1px solid #111">
-  <span class="var">$blue-dark</span>
-  <span class="color">#29627e</span>
+  <li>
+  <div class="colors-swatch" style="background-color: #29627e;"></div>
+  <p>$blue-dark | #29627e</p>
 </li>
 
-    <li style="background-color: #6f74b2; border: 1px solid #111">
-  <span class="var">$purple-dark</span>
-  <span class="color">#6f74b2</span>
+  <li>
+  <div class="colors-swatch" style="background-color: #6f74b2;"></div>
+  <p>$purple-dark | #6f74b2</p>
 </li>
 
-    <li style="background-color: #4c4c4c; border: 1px solid #111">
-  <span class="var">$grey-dark</span>
-  <span class="color">#4c4c4c</span>
+  <li>
+  <div class="colors-swatch" style="background-color: #4c4c4c;"></div>
+  <p>$grey-dark | #4c4c4c</p>
 </li>
 
-  </ul>
-</div>
+</ul>
 
 <h3 id="dark-base-shades">Dark Base Shades</h3>
 
-<div class="colors-container">
-  <ul class="colors">
-    <li style="background-color: #5d3739; border: 1px solid #111">
-  <span class="var">$red-vdark</span>
-  <span class="color">#5d3739</span>
+<ul class="colors">
+  <li>
+  <div class="colors-swatch" style="background-color: #5d3739;"></div>
+  <p>$red-vdark | #5d3739</p>
 </li>
 
-    <li style="background-color: #332206; border: 1px solid #111">
-  <span class="var">$orange-vdark</span>
-  <span class="color">#332206</span>
+  <li>
+  <div class="colors-swatch" style="background-color: #332206;"></div>
+  <p>$orange-vdark | #332206</p>
 </li>
 
-    <li style="background-color: #332807; border: 1px solid #111">
-  <span class="var">$yellow-vdark</span>
-  <span class="color">#332807</span>
+  <li>
+  <div class="colors-swatch" style="background-color: #332807;"></div>
+  <p>$yellow-vdark | #332807</p>
 </li>
 
-    <li style="background-color: #162300; border: 1px solid #111">
-  <span class="var">$green-vdark</span>
-  <span class="color">#162300</span>
+  <li>
+  <div class="colors-swatch" style="background-color: #162300;"></div>
+  <p>$green-vdark | #162300</p>
 </li>
 
-    <li style="background-color: #001d33; border: 1px solid #111">
-  <span class="var">$blue-vdark</span>
-  <span class="color">#001d33</span>
+  <li>
+  <div class="colors-swatch" style="background-color: #001d33;"></div>
+  <p>$blue-vdark | #001d33</p>
 </li>
 
-    <li style="background-color: #303253; border: 1px solid #111">
-  <span class="var">$purple-vdark</span>
-  <span class="color">#303253</span>
+  <li>
+  <div class="colors-swatch" style="background-color: #303253;"></div>
+  <p>$purple-vdark | #303253</p>
 </li>
 
-    <li style="background-color: #151515; border: 1px solid #111">
-  <span class="var">$grey-vdark</span>
-  <span class="color">#151515</span>
+  <li>
+  <div class="colors-swatch" style="background-color: #151515;"></div>
+  <p>$grey-vdark | #151515</p>
 </li>
 
-  </ul>
-</div>
+</ul>
 
 <h2 id="color-in-typography">Color in Typography</h2>
 
-<div class="colors-container">
-  <ul class="colors">
-    <li style="background-color: #333333; border: 1px solid #111">
-  <span class="var">$text-color</span>
-  <span class="color">#333333</span>
+<ul class="colors">
+  <li>
+  <div class="colors-swatch" style="background-color: #333333;"></div>
+  <p>$text-color | #333333</p>
 </li>
 
-    <li style="background-color: #3f87a6; border: 1px solid #111">
-  <span class="var">$link-color</span>
-  <span class="color">#3f87a6</span>
+  <li>
+  <div class="colors-swatch" style="background-color: #3f87a6;"></div>
+  <p>$link-color | #3f87a6</p>
 </li>
 
-  </ul>
-</div>
+</ul>
 
-<h3 id="bg-dark"><code>$bg-dark</code></h3>
+<h2 id="background-colours">Background Colours</h2>
 
+<ul class="colors">
+  <li>
+  <div class="colors-swatch" style="background-color: #222222;"></div>
+  <p>$bg-dark | #222222</p>
+</li>
 
-
-<div class="colors-container">
-  <ul class="colors">
-    
-      <li style="background-color: #222;">
-        <span>#222</span>
-      </li>
-    
-  </ul>
-</div>
-
-
-<h2 id="spacing">Spacing</h2>
-
-<ul>
-<li><code>$gutter-width</code>: 24px</li>
-<li><code>$content-block-margin</code>: 24px</li>
-<li><code>$mobile-center-spacing</code>: 15px</li>
 </ul>
 
   </main>
