@@ -15,7 +15,7 @@ tags = ["code style", "css"]
 * Put blank lines between [rule declarations](/patterns/css/terminology/#rule-declaration)
 * Avoid the use of <code>!important</code> ~ [When Using !important is The Right Choice](https://css-tricks.com/when-using-important-is-the-right-choice/)
 
-#### Bad
+#### Sad Face
 
 ```css
 .avatar{
@@ -33,7 +33,7 @@ tags = ["code style", "css"]
 }
 ```
 
-#### Good
+#### Smiley
 
 ```css
 .avatar {
@@ -87,7 +87,7 @@ This clearly defines intent, eases refactoring across the code base, and allevia
 
 When turning of borders on an element, always use `0` as apposed to `none`:
 
-### Bad
+### Sad Face
 
 ```css
 .selector {
@@ -95,10 +95,35 @@ When turning of borders on an element, always use `0` as apposed to `none`:
 }
 ```
 
-### Good
+### Smiley
 
 ```css
 .selector {
     border: 0;
+}
+```
+
+## Hex Color Codes
+
+The following rules apply when specifying a `hex` color code:
+
+* Always use lowercase letters
+* Always prefer the short form of a `hex` code
+
+### Sad Face
+
+```css
+.selector {
+    background-color: #EFEFEF;
+    color: #333333;
+}
+```
+
+### Smiley
+
+```css
+.selector {
+    background-color: #efefef;
+    color: #333;
 }
 ```

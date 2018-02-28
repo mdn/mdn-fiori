@@ -322,6 +322,12 @@
           </a>
         </li>
       
+        <li>
+          <a href="#hex-color-codes">
+            Hex Color Codes
+          </a>
+        </li>
+      
     </ol>
   </nav>
 
@@ -343,7 +349,7 @@
 <li>Avoid the use of <code>!important</code> ~ <a href="https://css-tricks.com/when-using-important-is-the-right-choice/">When Using !important is The Right Choice</a></li>
 </ul>
 
-<h4 id="bad">Bad</h4>
+<h4 id="sad-face">Sad Face</h4>
 
 <pre><code class="language-css">.avatar{
     border-radius:50%;
@@ -360,7 +366,7 @@
 }
 </code></pre>
 
-<h4 id="good">Good</h4>
+<h4 id="smiley">Smiley</h4>
 
 <pre><code class="language-css">.avatar {
     border-radius: 50%;
@@ -418,17 +424,42 @@
 
 <p>When turning of borders on an element, always use <code>0</code> as apposed to <code>none</code>:</p>
 
-<h3 id="bad-1">Bad</h3>
+<h3 id="sad-face-1">Sad Face</h3>
 
 <pre><code class="language-css">.selector {
     border: none;
 }
 </code></pre>
 
-<h3 id="good-1">Good</h3>
+<h3 id="smiley-1">Smiley</h3>
 
 <pre><code class="language-css">.selector {
     border: 0;
+}
+</code></pre>
+
+<h2 id="hex-color-codes">Hex Color Codes</h2>
+
+<p>The following rules apply when specifying a <code>hex</code> color code:</p>
+
+<ul>
+<li>Always use lowercase letters</li>
+<li>Always prefer the short form of a <code>hex</code> code</li>
+</ul>
+
+<h3 id="sad-face-2">Sad Face</h3>
+
+<pre><code class="language-css">.selector {
+    background-color: #EFEFEF;
+    color: #333333;
+}
+</code></pre>
+
+<h3 id="smiley-2">Smiley</h3>
+
+<pre><code class="language-css">.selector {
+    background-color: #efefef;
+    color: #333;
 }
 </code></pre>
 
