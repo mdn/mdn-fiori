@@ -11,6 +11,27 @@
     
     
     <item>
+      <title>General Syntax</title>
+      <link>https://schalkneethling.github.io/mdn-fiori/patterns/scss/syntax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/scss/syntax/</guid>
+      <description>General  Use the .scss syntax, never the original .sass syntax Order your regular CSS and @include declarations logically (see below)  Ordering of property declarations List all standard CSS properties, followed by @include and nested selectors:
+.card { display: flex; margin: 10px; @include set-font-size(18px); .title { color: $text-color; font-weight: bold; } }  Variables Prefer dash-cased variable names (e.g. $my-variable) over camelCased or snake_cased variable names
+Mixins Mixins should be used to DRY up your code, add clarity, or abstract complexity.</description>
+    </item>
+    
+    <item>
+      <title>Terminology</title>
+      <link>https://schalkneethling.github.io/mdn-fiori/patterns/css/terminology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/css/terminology/</guid>
+      <description>Rule Declaration A rule declaration generally consist of one or more selectors, and a list of properties. For example:
+.class-name { display: block; margin: 0; }  Selector A selector matches the element(s) to which the style rules will be applied. Selectors can be any combination of a class name, a HTML attribute as well as psuedo-classes and psuedo-elements. For more details on selectors, see the W3C CSS selectors specification.</description>
+    </item>
+    
+    <item>
       <title>Colour Variables</title>
       <link>https://schalkneethling.github.io/mdn-fiori/patterns/scss/variables/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -27,16 +48,6 @@ Colours Base Colours   $red | #e66465
   Lighter Base Shades   $red-light | #ffe7e8
    $orange-light | #ffe8d4
    $yellow-light | #fff3d4</description>
-    </item>
-    
-    <item>
-      <title>Terminology</title>
-      <link>https://schalkneethling.github.io/mdn-fiori/patterns/css/terminology/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/css/terminology/</guid>
-      <description>Rule Declaration A rule declaration generally consist of one or more selectors, and a list of properties. For example:
-.class-name { display: block; margin: 0; }  Selector A selector matches the element(s) to which the style rules will be applied. Selectors can be any combination of a class name, a HTML attribute as well as psuedo-classes and psuedo-elements. For more details on selectors, see the W3C CSS selectors specification.</description>
     </item>
     
     <item>
@@ -74,7 +85,7 @@ font-size: 1rem;  This is currently only used internally by the set-font-size mi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://schalkneethling.github.io/mdn-fiori/patterns/css/formatting/</guid>
-      <description>Formatting  Use 4 spaces (no tabs) for indentation Prefer dashes over camelCasing in class names. Do not use ID selectors When using multiple selectors in a rule declarations, give each selector its own line. Put a space before the opening brace { in rule declarations In properties, put a space after, but not before, the : character. Put closing braces } of rule declarations on a new line Put blank lines between rule declarations Avoid the use of !</description>
+      <description>General  Use 4 spaces (no tabs) for indentation Prefer dashes over camelCasing in class names. Do not use ID selectors When using multiple selectors in a rule declarations, give each selector its own line. Put a space before the opening brace { in rule declarations In properties, put a space after, but not before, the : character. Put closing braces } of rule declarations on a new line Put blank lines between rule declarations Avoid the use of !</description>
     </item>
     
     <item>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://schalkneethling.github.io/mdn-fiori/tags/typography/">
+    <link rel="canonical" href="https://schalkneethling.github.io/mdn-fiori/patterns/scss/syntax/">
     <link rel="apple-touch-icon" sizes="57x57" href="https://schalkneethling.github.io/mdn-fiori/images/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="https://schalkneethling.github.io/mdn-fiori/images/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="https://schalkneethling.github.io/mdn-fiori/images/apple-touch-icon-72x72.png">
@@ -30,8 +30,8 @@
     </style>
     <title>
       
-  Patterns tagged Typography | MDN Fiori
-
+        General Syntax | MDN Fiori
+      
     </title>
     
   </head>
@@ -191,7 +191,7 @@
                         <ul>
                           
                             <li class="pattern">
-                              <a href="https://schalkneethling.github.io/mdn-fiori/patterns/scss/syntax/" >
+                              <a href="https://schalkneethling.github.io/mdn-fiori/patterns/scss/syntax/" aria-current="page">
                                 <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
                                   <use xlink:href="#bookmark"></use>
                                 </svg>
@@ -258,26 +258,100 @@
           
   <main id="main">
     <h1>
-      <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-        <use xlink:href="#tag"></use>
-      </svg>
-      Tagged &#x201c;Typography&#x201d;
-    </h1>
-    <ul class="patterns-list">
-      
-          <li>
-  <h2>
-    <a href="https://schalkneethling.github.io/mdn-fiori/patterns/scss/set-font-size/">
-      <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
         <use xlink:href="#bookmark"></use>
       </svg>
-      set-font-size mixin
-    </a>
-  </h2>
-</li>
-
+      General Syntax
+    </h1>
+    
+    
       
-    </ul>
+
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Table of contents</h2>
+    <ol>
+      
+        <li>
+          <a href="#general">
+            General
+          </a>
+        </li>
+      
+        <li>
+          <a href="#ordering-of-property-declarations">
+            Ordering of property declarations
+          </a>
+        </li>
+      
+        <li>
+          <a href="#variables">
+            Variables
+          </a>
+        </li>
+      
+        <li>
+          <a href="#mixins">
+            Mixins
+          </a>
+        </li>
+      
+        <li>
+          <a href="#nested-selectors">
+            Nested Selectors
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
+
+    
+    
+
+<h2 id="general">General</h2>
+
+<ul>
+<li>Use the <code>.scss</code> syntax, never the original <code>.sass</code> syntax</li>
+<li>Order your regular CSS and <code>@include</code> declarations logically (see below)</li>
+</ul>
+
+<h2 id="ordering-of-property-declarations">Ordering of property declarations</h2>
+
+<p>List all standard CSS properties, followed by <code>@include</code> and nested selectors:</p>
+
+<pre><code class="language-css">.card {
+    display: flex;
+    margin: 10px;
+    @include set-font-size(18px);
+
+    .title {
+        color: $text-color;
+        font-weight: bold;
+    }
+}
+</code></pre>
+
+<h2 id="variables">Variables</h2>
+
+<p>Prefer dash-cased variable names (e.g. <code>$my-variable</code>) over camelCased or snake_cased variable names</p>
+
+<h2 id="mixins">Mixins</h2>
+
+<p>Mixins should be used to DRY up your code, add clarity, or abstract complexity. As with function names, ensure the name clearly describe its intent.</p>
+
+<h2 id="nested-selectors">Nested Selectors</h2>
+
+<p>Never nest selectors more than three levels deep. If you feel you have a need to break this rule, read the first sentence again. But seriously, you probably want to rethink your HTML structure, and ensure you are not fighting specificity. Embrace the cascade.</p>
+
+<pre><code class="language-css">.one {
+    .two {
+        .three {
+            // for the love of all that is good, please stop here
+        }
+    }
+}
+</code></pre>
+
   </main>
 
           <footer role="contentinfo">

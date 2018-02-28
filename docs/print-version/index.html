@@ -192,6 +192,15 @@
               <ul>
                 
                   <li class="pattern">
+                    <a href="#general-syntax" >
+                      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+                        <use xlink:href="#bookmark"></use>
+                      </svg>
+                      <span class="text">General Syntax</span>
+                    </a>
+                  </li>
+                
+                  <li class="pattern">
                     <a href="#colour-variables" >
                       <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
                         <use xlink:href="#bookmark"></use>
@@ -305,7 +314,7 @@ li:before {
             </h1>
             
 
-<h2 id="formatting">Formatting</h2>
+<h2 id="general">General</h2>
 
 <ul>
 <li>Use 4 spaces (no tabs) for indentation</li>
@@ -343,14 +352,35 @@ li:before {
     border: 2px solid white;
 }
 
-.no,
-.nope,
-.not_good {
+.yes,
+.good,
+.very-nice {
     // ...
 }
 </code></pre>
 
-<h3 id="why-no-id-selectors">Why No ID Selectors</h3>
+<h2 id="comments">Comments</h2>
+
+<ul>
+<li>Always use CSS style comments, for example</li>
+</ul>
+
+<pre><code class="language-css">/* double the base size */
+.larger {
+    ...
+}
+</code></pre>
+
+<ul>
+<li>Write detailed comments for code that isn’t self-documenting, for example
+
+<ul>
+<li>Uses of z-index</li>
+<li>Compatibility or browser-specific hacks</li>
+</ul></li>
+</ul>
+
+<h2 id="why-no-id-selectors">Why No ID Selectors</h2>
 
 <p>While it is possible to select elements by ID in CSS, it should generally be considered an anti-pattern. ID selectors introduce an <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity">unnecessarily high level of specificity</a> to your rule declarations, and they are not reusable.</p>
 
@@ -358,9 +388,93 @@ li:before {
 
 <p><a href="https://github.com/airbnb/css#id-selectors">kudos: AirBnB</a></p>
 
+<h2 id="javascript-hooks">JavaScript Hooks</h2>
+
+<p>When creating hooks for JavaScript functionality, prefer the use of an <code>id</code> as for as possible. When this does not make sense, use class names prefixed with <code>js-</code>, for example:</p>
+
+<pre><code class="language-html">&lt;form id=&quot;contact&quot; class=&quot;contact&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;js-input&quot; /&gt;
+    ...
+</code></pre>
+
+<p>This clearly defines intent, eases refactoring across the code base, and alleviates the fear of breaking functionality when changing, or removing class names.</p>
+
+<h2 id="turning-of-borders">Turning of Borders</h2>
+
+<p>When turning of borders on an element, always use <code>0</code> as apposed to <code>none</code>:</p>
+
+<h3 id="bad-1">Bad</h3>
+
+<pre><code class="language-css">.selector {
+    border: none;
+}
+</code></pre>
+
+<h3 id="good-1">Good</h3>
+
+<pre><code class="language-css">.selector {
+    border: 0;
+}
+</code></pre>
+
           </div>
         
       
+        
+          <div class="pattern-section">
+            <h1 id="general-syntax" tabindex="-1">
+              <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+                <use xlink:href="#bookmark"></use>
+              </svg>
+              General Syntax
+            </h1>
+            
+
+<h2 id="general">General</h2>
+
+<ul>
+<li>Use the <code>.scss</code> syntax, never the original <code>.sass</code> syntax</li>
+<li>Order your regular CSS and <code>@include</code> declarations logically (see below)</li>
+</ul>
+
+<h2 id="ordering-of-property-declarations">Ordering of property declarations</h2>
+
+<p>List all standard CSS properties, followed by <code>@include</code> and nested selectors:</p>
+
+<pre><code class="language-css">.card {
+    display: flex;
+    margin: 10px;
+    @include set-font-size(18px);
+
+    .title {
+        color: $text-color;
+        font-weight: bold;
+    }
+}
+</code></pre>
+
+<h2 id="variables">Variables</h2>
+
+<p>Prefer dash-cased variable names (e.g. <code>$my-variable</code>) over camelCased or snake_cased variable names</p>
+
+<h2 id="mixins">Mixins</h2>
+
+<p>Mixins should be used to DRY up your code, add clarity, or abstract complexity. As with function names, ensure the name clearly describe its intent.</p>
+
+<h2 id="nested-selectors">Nested Selectors</h2>
+
+<p>Never nest selectors more than three levels deep. If you feel you have a need to break this rule, read the first sentence again. But seriously, you probably want to rethink your HTML structure, and ensure you are not fighting specificity. Embrace the cascade.</p>
+
+<pre><code class="language-css">.one {
+    .two {
+        .three {
+            // for the love of all that is good, please stop here
+        }
+    }
+}
+</code></pre>
+
+          </div>
         
           <div class="pattern-section">
             <h1 id="colour-variables" tabindex="-1">

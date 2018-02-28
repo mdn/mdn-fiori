@@ -1,6 +1,6 @@
 +++
 title = "Colour Variables"
-weight = 1
+weight = 2
 +++
 
 All SCSS variables are defined in [kuma/static/styles/includes/_vars.scss](https://github.com/mozilla/kuma/blob/master/kuma/static/styles/includes/_vars.scss)

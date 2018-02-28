@@ -191,6 +191,15 @@
                         <ul>
                           
                             <li class="pattern">
+                              <a href="https://schalkneethling.github.io/mdn-fiori/patterns/scss/syntax/" >
+                                <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+                                  <use xlink:href="#bookmark"></use>
+                                </svg>
+                                <span class="text">General Syntax</span>
+                              </a>
+                            </li>
+                          
+                            <li class="pattern">
                               <a href="https://schalkneethling.github.io/mdn-fiori/patterns/scss/variables/" >
                                 <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
                                   <use xlink:href="#bookmark"></use>
@@ -279,11 +288,48 @@
     
       
 
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Table of contents</h2>
+    <ol>
+      
+        <li>
+          <a href="#general">
+            General
+          </a>
+        </li>
+      
+        <li>
+          <a href="#comments">
+            Comments
+          </a>
+        </li>
+      
+        <li>
+          <a href="#why-no-id-selectors">
+            Why No ID Selectors
+          </a>
+        </li>
+      
+        <li>
+          <a href="#javascript-hooks">
+            JavaScript Hooks
+          </a>
+        </li>
+      
+        <li>
+          <a href="#turning-of-borders">
+            Turning of Borders
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
 
     
     
 
-<h2 id="formatting">Formatting</h2>
+<h2 id="general">General</h2>
 
 <ul>
 <li>Use 4 spaces (no tabs) for indentation</li>
@@ -321,20 +367,70 @@
     border: 2px solid white;
 }
 
-.no,
-.nope,
-.not_good {
+.yes,
+.good,
+.very-nice {
     // ...
 }
 </code></pre>
 
-<h3 id="why-no-id-selectors">Why No ID Selectors</h3>
+<h2 id="comments">Comments</h2>
+
+<ul>
+<li>Always use CSS style comments, for example</li>
+</ul>
+
+<pre><code class="language-css">/* double the base size */
+.larger {
+    ...
+}
+</code></pre>
+
+<ul>
+<li>Write detailed comments for code that isn’t self-documenting, for example
+
+<ul>
+<li>Uses of z-index</li>
+<li>Compatibility or browser-specific hacks</li>
+</ul></li>
+</ul>
+
+<h2 id="why-no-id-selectors">Why No ID Selectors</h2>
 
 <p>While it is possible to select elements by ID in CSS, it should generally be considered an anti-pattern. ID selectors introduce an <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity">unnecessarily high level of specificity</a> to your rule declarations, and they are not reusable.</p>
 
 <p>For more on this subject, read <a href="http://csswizardry.com/2014/07/hacks-for-dealing-with-specificity/">CSS Wizardry&rsquo;s article on dealing with specificity</a>.</p>
 
 <p><a href="https://github.com/airbnb/css#id-selectors">kudos: AirBnB</a></p>
+
+<h2 id="javascript-hooks">JavaScript Hooks</h2>
+
+<p>When creating hooks for JavaScript functionality, prefer the use of an <code>id</code> as for as possible. When this does not make sense, use class names prefixed with <code>js-</code>, for example:</p>
+
+<pre><code class="language-html">&lt;form id=&quot;contact&quot; class=&quot;contact&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;js-input&quot; /&gt;
+    ...
+</code></pre>
+
+<p>This clearly defines intent, eases refactoring across the code base, and alleviates the fear of breaking functionality when changing, or removing class names.</p>
+
+<h2 id="turning-of-borders">Turning of Borders</h2>
+
+<p>When turning of borders on an element, always use <code>0</code> as apposed to <code>none</code>:</p>
+
+<h3 id="bad-1">Bad</h3>
+
+<pre><code class="language-css">.selector {
+    border: none;
+}
+</code></pre>
+
+<h3 id="good-1">Good</h3>
+
+<pre><code class="language-css">.selector {
+    border: 0;
+}
+</code></pre>
 
   </main>
 

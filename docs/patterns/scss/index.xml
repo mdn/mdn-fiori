@@ -11,6 +11,17 @@
     
     
     <item>
+      <title>General Syntax</title>
+      <link>https://schalkneethling.github.io/mdn-fiori/patterns/scss/syntax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/scss/syntax/</guid>
+      <description>General  Use the .scss syntax, never the original .sass syntax Order your regular CSS and @include declarations logically (see below)  Ordering of property declarations List all standard CSS properties, followed by @include and nested selectors:
+.card { display: flex; margin: 10px; @include set-font-size(18px); .title { color: $text-color; font-weight: bold; } }  Variables Prefer dash-cased variable names (e.g. $my-variable) over camelCased or snake_cased variable names
+Mixins Mixins should be used to DRY up your code, add clarity, or abstract complexity.</description>
+    </item>
+    
+    <item>
       <title>Colour Variables</title>
       <link>https://schalkneethling.github.io/mdn-fiori/patterns/scss/variables/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

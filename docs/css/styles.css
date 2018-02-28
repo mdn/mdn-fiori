@@ -140,6 +140,9 @@ pre,
     border: 1px solid;
 }
 code {
+    background-color: #eee;
+    color: #333;
+    padding: .3rem;
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     font-size: 0.85em;
 }
