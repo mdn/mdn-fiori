@@ -11,6 +11,18 @@
     
     
     <item>
+      <title>Comments</title>
+      <link>https://schalkneethling.github.io/mdn-fiori/patterns/js/comments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/js/comments/</guid>
+      <description>Comments Documenting functions When documenting the purpose of functions use the following convetions.
+Always use the /** ... */ format to wrap your comments
+/** * Adds a new user to the database */ function addUser(user) { ... return status; }  Documentation for each parameter should consist of the expected type, the name, and a description of its use.
+/** * Adds a new user to the database * @param {Object} user - The user to be added */ function addUser(user) { .</description>
+    </item>
+    
+    <item>
       <title>Formatting</title>
       <link>https://schalkneethling.github.io/mdn-fiori/patterns/css/formatting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

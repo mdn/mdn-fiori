@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://schalkneethling.github.io/mdn-fiori/tags/functions/">
+    <link rel="canonical" href="https://schalkneethling.github.io/mdn-fiori/patterns/js/comments/">
     <link rel="apple-touch-icon" sizes="57x57" href="https://schalkneethling.github.io/mdn-fiori/images/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="https://schalkneethling.github.io/mdn-fiori/images/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="https://schalkneethling.github.io/mdn-fiori/images/apple-touch-icon-72x72.png">
@@ -30,8 +30,8 @@
     </style>
     <title>
       
-  Patterns tagged Functions | MDN Fiori
-
+        Comments | MDN Fiori
+      
     </title>
     
   </head>
@@ -191,7 +191,7 @@
                         <ul>
                           
                             <li class="pattern">
-                              <a href="https://schalkneethling.github.io/mdn-fiori/patterns/js/comments/" >
+                              <a href="https://schalkneethling.github.io/mdn-fiori/patterns/js/comments/" aria-current="page">
                                 <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
                                   <use xlink:href="#bookmark"></use>
                                 </svg>
@@ -274,26 +274,143 @@
           
   <main id="main">
     <h1>
-      <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-        <use xlink:href="#tag"></use>
-      </svg>
-      Tagged &#x201c;Functions&#x201d;
-    </h1>
-    <ul class="patterns-list">
-      
-          <li>
-  <h2>
-    <a href="https://schalkneethling.github.io/mdn-fiori/patterns/scss/remify/">
-      <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
         <use xlink:href="#bookmark"></use>
       </svg>
-      -remify function
-    </a>
-  </h2>
-</li>
-
+      Comments
+    </h1>
+    
+      <div class="tags">
+        <strong aria-hidden="true">Tags: </strong>
+        <ul aria-label="tags">
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              <a href="https://schalkneethling.github.io/mdn-fiori/tags/code-style">code style</a>
+            </li>
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              <a href="https://schalkneethling.github.io/mdn-fiori/tags/js">js</a>
+            </li>
+          
+        </ul>
+      </div>
+    
+    
       
-    </ul>
+
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Table of contents</h2>
+    <ol>
+      
+        <li>
+          <a href="#comments">
+            Comments
+          </a>
+        </li>
+      
+        <li>
+          <a href="#single-line-comments">
+            Single Line Comments
+          </a>
+        </li>
+      
+        <li>
+          <a href="#multi-line-inline-comments">
+            Multi Line Inline Comments
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
+
+    
+    
+
+<h2 id="comments">Comments</h2>
+
+<h3 id="documenting-functions">Documenting functions</h3>
+
+<p>When documenting the purpose of functions use the following convetions.</p>
+
+<p>Always use the <code>/** ... */</code> format to wrap your comments</p>
+
+<pre><code class="language-js">/**
+ * Adds a new user to the database
+ */
+ function addUser(user) {
+     ...
+     return status;
+ }
+</code></pre>
+
+<p>Documentation for each parameter should consist of the expected type, the name, and a description of its use.</p>
+
+<pre><code class="language-js">/**
+ * Adds a new user to the database
+ * @param {Object} user - The user to be added
+ */
+ function addUser(user) {
+     ...
+     return status;
+ }
+</code></pre>
+
+<p>If a parameter is passed as an Object, describe the expected format.</p>
+
+<pre><code class="language-js">/**
+ * Adds a new user to the database
+ * @param {Object} user - The user to be added
+ * {
+ *     user: 'username',
+ *     email: 'email@email.com',
+ *     age: 41,
+ *     country: 'South Africa'
+ * }
+ */
+ function addUser(user) {
+     ...
+     return status;
+ }
+</code></pre>
+
+<p>If a function returns a value, clearly describe what will be returned. For <code>Objects</code>, detail the return value as described above for <code>Object</code> parameters.</p>
+
+<pre><code class="language-js">/**
+ * Adds a new user to the database
+ * @param {Object} user - The user to be added
+ * {
+ *     user: 'username',
+ *     email: 'email@email.com',
+ *     age: 41,
+ *     country: 'South Africa'
+ * }
+ * @returns status - A boolean indicating whether the user was added successfully
+ */
+ function addUser(user) {
+     ...
+     return status;
+ }
+</code></pre>
+
+<h2 id="single-line-comments">Single Line Comments</h2>
+
+<p>When added inline comments that does not span more than one line, use <code>//</code>. Place single line comments on a newline above the subject of the comment.</p>
+
+<pre><code class="language-js">// parse the html before adding to page
+parseHTML(html);
+</code></pre>
+
+<h2 id="multi-line-inline-comments">Multi Line Inline Comments</h2>
+
+<p>If the inline comment spans more than one line, use <code>/* ... */</code></p>
+
   </main>
 
           <footer role="contentinfo">

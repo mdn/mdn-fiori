@@ -37,6 +37,10 @@
   </url>
   
   <url>
+    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/js/comments/</loc>
+  </url>
+  
+  <url>
     <loc>https://schalkneethling.github.io/mdn-fiori/tags/css/</loc>
     <priority>0</priority>
   </url>
@@ -51,6 +55,15 @@
   
   <url>
     <loc>https://schalkneethling.github.io/mdn-fiori/tags/functions/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/js/</loc>
+  </url>
+  
+  <url>
+    <loc>https://schalkneethling.github.io/mdn-fiori/tags/js/</loc>
     <priority>0</priority>
   </url>
   
