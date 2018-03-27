@@ -7,8 +7,7 @@ tags = ["code style", "js"]
 
 ### Documenting functions
 
-When documenting the purpose of functions use the following convetions.
-
+When documenting functions use the following convetions.
 Always use the `/** ... */` format to wrap your comments
 
 ```js
@@ -57,17 +56,17 @@ If a function returns a value, clearly describe what will be returned. For `Obje
 
 ```js
 /**
- * Adds a new user to the database
- * @param {Object} user - The user to be added
+ * Loads and returns a user from the database using the provided userId
+ * @param {string} userId - The userId of the user to retrieve
+ * @returns user - The user as an Object or undefined if no user was found
  * {
  *     user: 'username',
  *     email: 'email@email.com',
  *     age: 41,
  *     country: 'South Africa'
  * }
- * @returns status - A boolean indicating whether the user was added successfully
  */
- function addUser(user) {
+ function getUser(userId) {
      ...
      return status;
  }
@@ -84,4 +83,10 @@ parseHTML(html);
 
 ## Multi Line Inline Comments
 
-If the inline comment spans more than one line, use `/* ... */`
+If the inline comment spans more than one line, use `/* ... */`, indenting additional lines with four spaces.
+
+```js
+/* Sends a message to the parent frame using postMessage.
+    For details see https://someurl.com */
+sendMessage(message);
+```
