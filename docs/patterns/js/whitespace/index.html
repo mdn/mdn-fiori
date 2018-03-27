@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://schalkneethling.github.io/mdn-fiori/tags/l10n/">
+    <link rel="canonical" href="https://schalkneethling.github.io/mdn-fiori/patterns/js/whitespace/">
     <link rel="apple-touch-icon" sizes="57x57" href="https://schalkneethling.github.io/mdn-fiori/images/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="https://schalkneethling.github.io/mdn-fiori/images/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="https://schalkneethling.github.io/mdn-fiori/images/apple-touch-icon-72x72.png">
@@ -30,8 +30,8 @@
     </style>
     <title>
       
-  Patterns tagged L10n | MDN Fiori
-
+        Whitespace | MDN Fiori
+      
     </title>
     
   </head>
@@ -200,7 +200,7 @@
                             </li>
                           
                             <li class="pattern">
-                              <a href="https://schalkneethling.github.io/mdn-fiori/patterns/js/whitespace/" >
+                              <a href="https://schalkneethling.github.io/mdn-fiori/patterns/js/whitespace/" aria-current="page">
                                 <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
                                   <use xlink:href="#bookmark"></use>
                                 </svg>
@@ -283,26 +283,143 @@
           
   <main id="main">
     <h1>
-      <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-        <use xlink:href="#tag"></use>
-      </svg>
-      Tagged &#x201c;L10n&#x201d;
-    </h1>
-    <ul class="patterns-list">
-      
-          <li>
-  <h2>
-    <a href="https://schalkneethling.github.io/mdn-fiori/patterns/scss/bidi/">
-      <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
         <use xlink:href="#bookmark"></use>
       </svg>
-      bidi - l10n utilities
-    </a>
-  </h2>
-</li>
-
+      Whitespace
+    </h1>
+    
+      <div class="tags">
+        <strong aria-hidden="true">Tags: </strong>
+        <ul aria-label="tags">
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              <a href="https://schalkneethling.github.io/mdn-fiori/tags/code-style">code style</a>
+            </li>
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              <a href="https://schalkneethling.github.io/mdn-fiori/tags/js">js</a>
+            </li>
+          
+        </ul>
+      </div>
+    
+    
       
-    </ul>
+
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Table of contents</h2>
+    <ol>
+      
+        <li>
+          <a href="#general">
+            General
+          </a>
+        </li>
+      
+        <li>
+          <a href="#code-blocks">
+            Code Blocks
+          </a>
+        </li>
+      
+        <li>
+          <a href="#control-statements">
+            Control Statements
+          </a>
+        </li>
+      
+        <li>
+          <a href="#function-declarations">
+            Function Declarations
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
+
+    
+    
+
+<h2 id="general">General</h2>
+
+<p>Use soft tabs set to 4 spaces.</p>
+
+<h3 id="sad-face">Sad Face</h3>
+
+<pre><code class="language-js">function highlight() {
+∙∙let header;
+}
+</code></pre>
+
+<h3 id="happy-face">Happy Face</h3>
+
+<pre><code class="language-js">function highlight() {
+∙∙∙∙let header;
+}
+</code></pre>
+
+<h2 id="code-blocks">Code Blocks</h2>
+
+<p>Place 1 space before the leading brace</p>
+
+<h3 id="sad-face-1">Sad Face</h3>
+
+<pre><code class="language-js">function highlight(){
+∙∙let header;
+}
+</code></pre>
+
+<h3 id="happy-face-1">Happy Face</h3>
+
+<pre><code class="language-js">function highlight() {
+∙∙∙∙let header;
+}
+</code></pre>
+
+<h2 id="control-statements">Control Statements</h2>
+
+<p>Place 1 space before the opening parenthesis in control statements (<code>if</code>, <code>while</code> etc.).</p>
+
+<h3 id="sad-face-2">Sad Face</h3>
+
+<pre><code class="language-js">if(true) {
+    ...
+}
+</code></pre>
+
+<h3 id="happy-face-2">Happy Face</h3>
+
+<pre><code class="language-js">if (changeling) {
+    ...
+}
+</code></pre>
+
+<h2 id="function-declarations">Function Declarations</h2>
+
+<p>No spaces between the argument list and the function name.</p>
+
+<h3 id="sad-face-3">Sad Face</h3>
+
+<pre><code class="language-js">function add (one, two) {
+    ...
+}
+</code></pre>
+
+<h3 id="happy-face-3">Happy Face</h3>
+
+<pre><code class="language-js">function add(one, two) {
+    ...
+}
+</code></pre>
+
   </main>
 
           <footer role="contentinfo">

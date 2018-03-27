@@ -16,8 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://schalkneethling.github.io/mdn-fiori/patterns/js/comments/</guid>
-      <description>Comments Documenting functions When documenting the purpose of functions use the following convetions.
-Always use the /** ... */ format to wrap your comments
+      <description>Comments Documenting functions When documenting functions use the following convetions. Always use the /** ... */ format to wrap your comments
 /** * Adds a new user to the database */ function addUser(user) { ... return status; }  Documentation for each parameter should consist of the expected type, the name, and a description of its use.
 /** * Adds a new user to the database * @param {Object} user - The user to be added */ function addUser(user) { .</description>
     </item>
@@ -39,6 +38,18 @@ Always use the /** ... */ format to wrap your comments
       <guid>https://schalkneethling.github.io/mdn-fiori/patterns/css/terminology/</guid>
       <description>Rule Declaration A rule declaration generally consist of one or more selectors, and a list of properties. For example:
 .class-name { display: block; margin: 0; }  Selector A selector matches the element(s) to which the style rules will be applied. Selectors can be any combination of a class name, a HTML attribute as well as psuedo-classes and psuedo-elements. For more details on selectors, see the W3C CSS selectors specification.</description>
+    </item>
+    
+    <item>
+      <title>Whitespace</title>
+      <link>https://schalkneethling.github.io/mdn-fiori/patterns/js/whitespace/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/js/whitespace/</guid>
+      <description>General Use soft tabs set to 4 spaces.
+Sad Face function highlight() { ∙∙let header; }  Happy Face function highlight() { ∙∙∙∙let header; }  Code Blocks Place 1 space before the leading brace
+Sad Face function highlight(){ ∙∙let header; }  Happy Face function highlight() { ∙∙∙∙let header; }  Control Statements Place 1 space before the opening parenthesis in control statements (if, while etc.).
+Sad Face if(true) { .</description>
     </item>
     
   </channel>
