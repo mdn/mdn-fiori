@@ -184,6 +184,31 @@
                     </a>
                   </li>
                 
+                  <li class="pattern">
+                    <a href="#iconography" >
+                      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+                        <use xlink:href="#bookmark"></use>
+                      </svg>
+                      <span class="text">Iconography</span>
+                    </a>
+                  </li>
+                
+              </ul>
+            </li>
+          
+            <li>
+              <h3>Components</h3>
+              <ul>
+                
+                  <li class="pattern">
+                    <a href="#ui-actions" >
+                      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+                        <use xlink:href="#bookmark"></use>
+                      </svg>
+                      <span class="text">UI Actions</span>
+                    </a>
+                  </li>
+                
               </ul>
             </li>
           
@@ -465,6 +490,346 @@ li:before {
     background-color: #efefef;
     color: #333;
 }
+</code></pre>
+
+          </div>
+        
+          <div class="pattern-section">
+            <h1 id="iconography" tabindex="-1">
+              <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+                <use xlink:href="#bookmark"></use>
+              </svg>
+              Iconography
+            </h1>
+            
+
+<p>The following is a list of icons used across MDN Web Docs. As part of each icon, the HTML used to add them to a page is included.</p>
+
+<h2 id="website-icons">Website Icons</h2>
+
+<p><img src="https://schalkneethling.github.io/mdn-fiori/images/icons/websites/facebook.svg" alt="'Facebook'" /></p>
+
+<pre><code class="language-html">{% include &quot;includes/icons/facebook.svg&quot; %}
+</code></pre>
+
+<p><img src="https://schalkneethling.github.io/mdn-fiori/images/icons/websites/github.svg" alt="'Github'" /></p>
+
+<pre><code class="language-html">{% include &quot;includes/icons/github.svg&quot; %}
+</code></pre>
+
+<p><img src="https://schalkneethling.github.io/mdn-fiori/images/icons/websites/instagram.svg" alt="'Instagram'" /></p>
+
+<pre><code class="language-html">{% include &quot;includes/icons/instagram.svg&quot; %}
+</code></pre>
+
+<p><img src="https://schalkneethling.github.io/mdn-fiori/images/icons/websites/jsfiddle.svg" alt="'JSFiddle'" /></p>
+
+<pre><code class="language-html">{% include &quot;includes/icons/jsfiddle.svg&quot; %}
+</code></pre>
+
+<p><img src="https://schalkneethling.github.io/mdn-fiori/images/icons/websites/linkedin.svg" alt="'LinkedIn'" /></p>
+
+<pre><code class="language-html">{% include &quot;includes/icons/linkedin.svg&quot; %}
+</code></pre>
+
+<p><img src="https://schalkneethling.github.io/mdn-fiori/images/icons/websites/stack-overflow.svg" alt="'StackOverflow'" /></p>
+
+<pre><code class="language-html">{% include &quot;includes/icons/stack-overflow.svg&quot; %}
+</code></pre>
+
+<p><img src="https://schalkneethling.github.io/mdn-fiori/images/icons/websites/twitter.svg" alt="'Twitter'" /></p>
+
+<pre><code class="language-html">{% include &quot;includes/icons/twitter.svg&quot; %}
+</code></pre>
+
+<h2 id="arrows">Arrows</h2>
+
+<p><img src="https://schalkneethling.github.io/mdn-fiori/images/icons/arrows/caret-down.svg" alt="''" /></p>
+
+<pre><code class="language-html">{% include &quot;includes/icons/caret-down.svg&quot; %}
+</code></pre>
+
+<p><img src="https://schalkneethling.github.io/mdn-fiori/images/icons/arrows/caret-right.svg" alt="''" /></p>
+
+<pre><code class="language-html">{% include &quot;includes/icons/caret-right.svg&quot; %}
+</code></pre>
+
+<p><img src="https://schalkneethling.github.io/mdn-fiori/images/icons/arrows/arrow-right.svg" alt="''" /></p>
+
+<pre><code class="language-html">{% include &quot;includes/icons/arrow-right.svg&quot; %}
+</code></pre>
+
+<h2 id="linking">Linking</h2>
+
+<p><img src="https://schalkneethling.github.io/mdn-fiori/images/icons/linking/external.svg" alt="'external link'" /></p>
+
+<pre><code class="language-html">{% include &quot;includes/icons/external-link.svg&quot; %}
+</code></pre>
+
+<h2 id="general">General</h2>
+
+<p><img src="https://schalkneethling.github.io/mdn-fiori/images/icons/general/search.svg" alt="'search'" /></p>
+
+<pre><code class="language-html">{% include &quot;includes/icons/search.svg&quot; %}
+</code></pre>
+
+<p><img src="https://schalkneethling.github.io/mdn-fiori/images/icons/general/close.svg" alt="'close'" /></p>
+
+<pre><code class="language-html">{% include &quot;includes/icons/close.svg&quot; %}
+</code></pre>
+
+          </div>
+        
+      
+        
+          <div class="pattern-section">
+            <h1 id="ui-actions" tabindex="-1">
+              <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+                <use xlink:href="#bookmark"></use>
+              </svg>
+              UI Actions
+            </h1>
+            
+
+<h2 id="links">Links</h2>
+
+<h3 id="cta-link">CTA Link</h3>
+
+
+<div class="demo-container">
+  
+      <div class="demo-inner" >
+        <div class="demo" id="js-demo-1a76a1acd81f2f6ca686bf6766e1bef5"></div>
+        <button data-launch="js-demo-1a76a1acd81f2f6ca686bf6766e1bef5">Launch <span aria-hidden="true">↗</span></button>
+      </div>
+      
+  
+  <template id="template-1a76a1acd81f2f6ca686bf6766e1bef5">
+      
+<style>
+.cta-link {
+    position: relative;
+    display: inline-block;
+    color: #333;
+    padding: 10px 30px 10px 0;
+    border-bottom: 2px solid;
+    font-family: 'Open Sans', Helvetica Neue, sans-serif;
+    font-size: 17px;
+    text-align: left;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.cta-link:hover,
+.cta-link:focus {
+    text-decoration: none;
+}
+
+.icon-arrow {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    transition: right .2s;
+}
+
+.cta-link:hover .icon-arrow,
+.cta-link:focus .icon-arrow {
+    right: -5px;
+}
+</style>
+<a href="#" class="cta-link">
+  Learn web development
+  <svg class="icon icon-arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" aria-hidden="true">
+        <path d="M23 15c0 0.531-0.203 1.047-0.578 1.422l-10.172 10.172c-0.375 0.359-0.891 0.578-1.422 0.578s-1.031-0.219-1.406-0.578l-1.172-1.172c-0.375-0.375-0.594-0.891-0.594-1.422s0.219-1.047 0.594-1.422l4.578-4.578h-11c-1.125 0-1.828-0.938-1.828-2v-2c0-1.062 0.703-2 1.828-2h11l-4.578-4.594c-0.375-0.359-0.594-0.875-0.594-1.406s0.219-1.047 0.594-1.406l1.172-1.172c0.375-0.375 0.875-0.594 1.406-0.594s1.047 0.219 1.422 0.594l10.172 10.172c0.375 0.359 0.578 0.875 0.578 1.406z"></path>
+    </svg>
+</a>
+
+  </template>
+  <script>
+    (function() {
+      var root = document.getElementById('js-demo-1a76a1acd81f2f6ca686bf6766e1bef5');
+      var template = document.getElementById('template-1a76a1acd81f2f6ca686bf6766e1bef5');
+
+      
+      var demoDiv = document.createElement('div');
+      demoDiv.innerHTML = template.innerHTML;
+      var standaloneScript = demoDiv.querySelector('script');
+      if (standaloneScript) {
+        standaloneScript.textContent = '(function() { document.getElementsByTagName(\'html\')[0].setAttribute(\'lang\', \'en\'); var demo = document; ' + standaloneScript.textContent + ' })();';
+      }
+
+      if (document.head.attachShadow) {
+        var templateScript = template.content.querySelector('script');
+        if (templateScript) {
+          var wrappedScript = '(function() { var demo = document.getElementById(\'js-demo-1a76a1acd81f2f6ca686bf6766e1bef5\').shadowRoot;' + templateScript.textContent + '})();';
+          templateScript.textContent = wrappedScript;
+        }
+        root.attachShadow({mode: 'open'});
+        root.shadowRoot.appendChild(document.importNode(template.content, true));
+      } else {
+        root.innerHTML = '<p class="site-error"><strong style="font-weight:bold">Site error:</strong> A browser supporting Shadow DOM is needed to run encapsulated demos. You can launch the demo in a separate window ↓</p>';
+      }
+
+      var launchButton = document.querySelector('[data-launch="js-demo-1a76a1acd81f2f6ca686bf6766e1bef5"]');
+      launchButton.addEventListener('click', function () {
+        var standalone = window.open();
+        standalone.document.body.innerHTML = demoDiv.innerHTML;
+
+        
+        var newScript = standalone.document.createElement('script');
+        var oldScript = standalone.document.querySelector('script');
+        if (oldScript) {
+          newScript.textContent = oldScript.textContent;
+          oldScript.parentNode.removeChild(oldScript);
+          standalone.document.body.appendChild(newScript);
+        }
+        
+
+        standalone.document.title = 'demo ' + "1a76a1acd81f2f6ca686bf6766e1bef5";
+      });
+    })();
+  </script>
+</div>
+
+
+<h4 id="html">HTML</h4>
+
+<pre><code class="language-html">&lt;a href=&quot;{{ wiki_url('Learn') }}&quot; class=&quot;cta-link&quot;&gt;
+  {{ _('Learn web development') }}{% include &quot;includes/icons/arrow.svg&quot; %}
+&lt;/a&gt;
+</code></pre>
+
+<h2 id="buttons">Buttons</h2>
+
+<h3 id="form-submit-button">Form Submit Button</h3>
+
+<p>
+<div class="demo-container">
+  
+      <div class="demo-inner" >
+        <div class="demo" id="js-demo-0020e3b03c223ea314f10c94b89e69a5"></div>
+        <button data-launch="js-demo-0020e3b03c223ea314f10c94b89e69a5">Launch <span aria-hidden="true">↗</span></button>
+      </div>
+      
+  
+  <template id="template-0020e3b03c223ea314f10c94b89e69a5">
+      
+<style>
+button {
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1;
+    font-family: 'Open Sans', Helvetica Neue, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: normal;
+    border: 2px solid #9b9b9b;
+    background-color: #fff;
+    padding: 5px 11px;
+    color: #4c4c4c;
+    text-decoration: none;
+}
+
+button.neutral {
+    border-color: #4087A1;
+    color: #29627e;
+}
+
+.newsletter-submit {
+    position: relative;
+    width: 40%;
+    height: 50px;
+    padding: 10px;
+    padding-right: 2em;
+    text-align: left;
+}
+
+.newsletter-submit:hover,
+.newsletter-submit:focus {
+    text-decoration: none;
+}
+
+.icon {
+    fill: currentColor;
+}
+
+.icon-arrow {
+    position: absolute;
+    top: 30%;
+    right: 10px;
+    width: 16px;
+    height: 16px;
+    transition: right .2s;
+}
+
+.newsletter-submit:hover .icon-arrow,
+.newsletter-submit:focus .icon-arrow {
+    right: 5px;
+}
+</style>
+<button id="newsletter-submit" type="submit" class="button neutral newsletter-submit">
+    Sign up now
+    <svg class="icon icon-arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" aria-hidden="true">
+          <path d="M23 15c0 0.531-0.203 1.047-0.578 1.422l-10.172 10.172c-0.375 0.359-0.891 0.578-1.422 0.578s-1.031-0.219-1.406-0.578l-1.172-1.172c-0.375-0.375-0.594-0.891-0.594-1.422s0.219-1.047 0.594-1.422l4.578-4.578h-11c-1.125 0-1.828-0.938-1.828-2v-2c0-1.062 0.703-2 1.828-2h11l-4.578-4.594c-0.375-0.359-0.594-0.875-0.594-1.406s0.219-1.047 0.594-1.406l1.172-1.172c0.375-0.375 0.875-0.594 1.406-0.594s1.047 0.219 1.422 0.594l10.172 10.172c0.375 0.359 0.578 0.875 0.578 1.406z"></path>
+      </svg>
+</button>
+
+  </template>
+  <script>
+    (function() {
+      var root = document.getElementById('js-demo-0020e3b03c223ea314f10c94b89e69a5');
+      var template = document.getElementById('template-0020e3b03c223ea314f10c94b89e69a5');
+
+      
+      var demoDiv = document.createElement('div');
+      demoDiv.innerHTML = template.innerHTML;
+      var standaloneScript = demoDiv.querySelector('script');
+      if (standaloneScript) {
+        standaloneScript.textContent = '(function() { document.getElementsByTagName(\'html\')[0].setAttribute(\'lang\', \'en\'); var demo = document; ' + standaloneScript.textContent + ' })();';
+      }
+
+      if (document.head.attachShadow) {
+        var templateScript = template.content.querySelector('script');
+        if (templateScript) {
+          var wrappedScript = '(function() { var demo = document.getElementById(\'js-demo-0020e3b03c223ea314f10c94b89e69a5\').shadowRoot;' + templateScript.textContent + '})();';
+          templateScript.textContent = wrappedScript;
+        }
+        root.attachShadow({mode: 'open'});
+        root.shadowRoot.appendChild(document.importNode(template.content, true));
+      } else {
+        root.innerHTML = '<p class="site-error"><strong style="font-weight:bold">Site error:</strong> A browser supporting Shadow DOM is needed to run encapsulated demos. You can launch the demo in a separate window ↓</p>';
+      }
+
+      var launchButton = document.querySelector('[data-launch="js-demo-0020e3b03c223ea314f10c94b89e69a5"]');
+      launchButton.addEventListener('click', function () {
+        var standalone = window.open();
+        standalone.document.body.innerHTML = demoDiv.innerHTML;
+
+        
+        var newScript = standalone.document.createElement('script');
+        var oldScript = standalone.document.querySelector('script');
+        if (oldScript) {
+          newScript.textContent = oldScript.textContent;
+          oldScript.parentNode.removeChild(oldScript);
+          standalone.document.body.appendChild(newScript);
+        }
+        
+
+        standalone.document.title = 'demo ' + "0020e3b03c223ea314f10c94b89e69a5";
+      });
+    })();
+  </script>
+</div>
+</p>
+
+<h4 id="html-1">HTML</h4>
+
+<pre><code class="language-html">&lt;button id=&quot;newsletter-submit&quot; type=&quot;submit&quot; class=&quot;button neutral newsletter-submit&quot;&gt;
+    {{ _('Sign up now') }}{% include &quot;includes/icons/arrow.svg&quot; %}
+&lt;/button&gt;
 </code></pre>
 
           </div>

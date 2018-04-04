@@ -100,6 +100,25 @@ font-size: 1rem;  This is currently only used internally by the set-font-size mi
     </item>
     
     <item>
+      <title>Iconography</title>
+      <link>https://schalkneethling.github.io/mdn-fiori/patterns/css/iconography/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/css/iconography/</guid>
+      <description>The following is a list of icons used across MDN Web Docs. As part of each icon, the HTML used to add them to a page is included.
+Website Icons {% include &amp;quot;includes/icons/facebook.svg&amp;quot; %}  {% include &amp;quot;includes/icons/github.svg&amp;quot; %}  {% include &amp;quot;includes/icons/instagram.svg&amp;quot; %}  {% include &amp;quot;includes/icons/jsfiddle.svg&amp;quot; %}  {% include &amp;quot;includes/icons/linkedin.svg&amp;quot; %}  {% include &amp;quot;includes/icons/stack-overflow.svg&amp;quot; %}  {% include &amp;quot;includes/icons/twitter.svg&amp;quot; %}  Arrows {% include &amp;quot;includes/icons/caret-down.svg&amp;quot; %}  {% include &amp;quot;includes/icons/caret-right.</description>
+    </item>
+    
+    <item>
+      <title>UI Actions</title>
+      <link>https://schalkneethling.github.io/mdn-fiori/patterns/components/actions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/components/actions/</guid>
+      <description>Links CTA Link  Launch ↗   .cta-link { position: relative; display: inline-block; color: #333; padding: 10px 30px 10px 0; border-bottom: 2px solid; font-family: &#39;Open Sans&#39;, Helvetica Neue, sans-serif; font-size: 17px; text-align: left; text-decoration: none; box-sizing: border-box; } .cta-link:hover, .cta-link:focus { text-decoration: none; } .icon-arrow { position: absolute; top: 30%; right: 0; width: 16px; height: 16px; transition: right .2s; } .cta-link:hover .icon-arrow, .cta-link:focus .icon-arrow { right: -5px; }  Learn web development      (function() { var root = document.</description>
+    </item>
+    
+    <item>
       <title>Whitespace</title>
       <link>https://schalkneethling.github.io/mdn-fiori/patterns/js/whitespace/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

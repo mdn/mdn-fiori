@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Html on MDN Fiori</title>
+    <link>https://schalkneethling.github.io/mdn-fiori/tags/html/</link>
+    <description>Recent content in Html on MDN Fiori</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://schalkneethling.github.io/mdn-fiori/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>UI Actions</title>
+      <link>https://schalkneethling.github.io/mdn-fiori/patterns/components/actions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/components/actions/</guid>
+      <description>Links CTA Link  Launch ↗   .cta-link { position: relative; display: inline-block; color: #333; padding: 10px 30px 10px 0; border-bottom: 2px solid; font-family: &#39;Open Sans&#39;, Helvetica Neue, sans-serif; font-size: 17px; text-align: left; text-decoration: none; box-sizing: border-box; } .cta-link:hover, .cta-link:focus { text-decoration: none; } .icon-arrow { position: absolute; top: 30%; right: 0; width: 16px; height: 16px; transition: right .2s; } .cta-link:hover .icon-arrow, .cta-link:focus .icon-arrow { right: -5px; }  Learn web development      (function() { var root = document.</description>
+    </item>
+    
+  </channel>
+</rss>

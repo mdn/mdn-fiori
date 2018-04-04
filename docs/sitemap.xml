@@ -23,6 +23,11 @@
   </url>
   
   <url>
+    <loc>https://schalkneethling.github.io/mdn-fiori/tags/buttons/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://schalkneethling.github.io/mdn-fiori/patterns/css/</loc>
   </url>
   
@@ -38,6 +43,15 @@
   
   <url>
     <loc>https://schalkneethling.github.io/mdn-fiori/patterns/js/comments/</loc>
+  </url>
+  
+  <url>
+    <loc>https://schalkneethling.github.io/mdn-fiori/tags/components/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/components/</loc>
   </url>
   
   <url>
@@ -59,6 +73,20 @@
   </url>
   
   <url>
+    <loc>https://schalkneethling.github.io/mdn-fiori/tags/html/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/css/iconography/</loc>
+  </url>
+  
+  <url>
+    <loc>https://schalkneethling.github.io/mdn-fiori/tags/icons/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://schalkneethling.github.io/mdn-fiori/patterns/js/</loc>
   </url>
   
@@ -69,6 +97,11 @@
   
   <url>
     <loc>https://schalkneethling.github.io/mdn-fiori/tags/l10n/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://schalkneethling.github.io/mdn-fiori/tags/links/</loc>
     <priority>0</priority>
   </url>
   
@@ -96,6 +129,11 @@
   </url>
   
   <url>
+    <loc>https://schalkneethling.github.io/mdn-fiori/tags/svg/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://schalkneethling.github.io/mdn-fiori/tags/</loc>
     <priority>0</priority>
   </url>
@@ -103,6 +141,10 @@
   <url>
     <loc>https://schalkneethling.github.io/mdn-fiori/tags/typography/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://schalkneethling.github.io/mdn-fiori/patterns/components/actions/</loc>
   </url>
   
   <url>

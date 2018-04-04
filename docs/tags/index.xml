@@ -11,11 +11,29 @@
     
     
     <item>
+      <title>Buttons</title>
+      <link>https://schalkneethling.github.io/mdn-fiori/tags/buttons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://schalkneethling.github.io/mdn-fiori/tags/buttons/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Code Style</title>
       <link>https://schalkneethling.github.io/mdn-fiori/tags/code-style/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://schalkneethling.github.io/mdn-fiori/tags/code-style/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Components</title>
+      <link>https://schalkneethling.github.io/mdn-fiori/tags/components/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://schalkneethling.github.io/mdn-fiori/tags/components/</guid>
       <description></description>
     </item>
     
@@ -38,6 +56,24 @@
     </item>
     
     <item>
+      <title>Html</title>
+      <link>https://schalkneethling.github.io/mdn-fiori/tags/html/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://schalkneethling.github.io/mdn-fiori/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Icons</title>
+      <link>https://schalkneethling.github.io/mdn-fiori/tags/icons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://schalkneethling.github.io/mdn-fiori/tags/icons/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Js</title>
       <link>https://schalkneethling.github.io/mdn-fiori/tags/js/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -56,6 +92,15 @@
     </item>
     
     <item>
+      <title>Links</title>
+      <link>https://schalkneethling.github.io/mdn-fiori/tags/links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://schalkneethling.github.io/mdn-fiori/tags/links/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Mixins</title>
       <link>https://schalkneethling.github.io/mdn-fiori/tags/mixins/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -70,6 +115,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://schalkneethling.github.io/mdn-fiori/tags/scss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Svg</title>
+      <link>https://schalkneethling.github.io/mdn-fiori/tags/svg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://schalkneethling.github.io/mdn-fiori/tags/svg/</guid>
       <description></description>
     </item>
     
