@@ -1,7 +1,14 @@
 /* fonts */
 @font-face {
-    font-family: 'Miriam Libre';
-    src: url('fonts/miriamlibre-bold.woff2') format('woff2'), url('fonts/miriamlibre-bold.woff') format('woff');
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Bold-webfont.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
 }
@@ -17,7 +24,7 @@
 }
 html {
     font-size: calc(1em + 0.33vw);
-    font-family: Arial, Helvetica Neue, sans-serif;
+    font-family: 'Open Sans', Helvetica Neue, sans-serif;
     line-height: 1.5;
     color: #111;
     background-color: #fefefe;
@@ -103,7 +110,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: Miriam Libre, serif;
+    font-family: 'Open Sans', serif;
     line-height: 1.125;
 }
 h1 {
