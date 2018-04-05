@@ -90,3 +90,67 @@ The following is a list of icons used across MDN Web Docs. As part of each icon,
 ```html
 {% include "includes/icons/close.svg" %}
 ```
+
+!['check mark'](/images/icons/general/check-mark.svg)
+
+```html
+{% include "includes/icons/check-mark.svg" %}
+```
+
+![''](/images/icons/general/star.svg)
+
+```html
+{% include "includes/icons/star.svg" %}
+```
+
+!['comment bubble'](/images/icons/general/comment.svg)
+
+```html
+{% include "includes/icons/comment.svg" %}
+```
+
+!['tags'](/images/icons/general/tags.svg)
+
+```html
+{% include "includes/icons/tags.svg" %}
+```
+
+!['smile'](/images/icons/general/smile.svg)
+
+```html
+{% include "includes/icons/smile.svg" %}
+```
+
+!['frown'](/images/icons/general/frown.svg)
+
+```html
+{% include "includes/icons/frown.svg" %}
+```
+
+## Punctuation
+
+!['question mark'](/images/icons/punctuation/question.svg)
+
+```html
+{% include "includes/icons/question.svg" %}
+```
+
+## Tools
+
+!['pencil'](/images/icons/tools/pencil.svg)
+
+```html
+{% include "includes/icons/pencil.svg" %}
+```
+
+!['play'](/images/icons/tools/play.svg)
+
+```html
+{% include "includes/icons/play.svg" %}
+```
+
+!['undo'](/images/icons/tools/undo.svg)
+
+```html
+{% include "includes/icons/undo.svg" %}
+```
