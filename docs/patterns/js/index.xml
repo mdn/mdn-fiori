@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JavaScript on MDN Fiori</title>
-    <link>https://schalkneethling.github.io/mdn-fiori/patterns/js/</link>
+    <link>https://mdn.github.io/mdn-fiori/patterns/js/</link>
     <description>Recent content in JavaScript on MDN Fiori</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://schalkneethling.github.io/mdn-fiori/patterns/js/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mdn.github.io/mdn-fiori/patterns/js/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Comments</title>
-      <link>https://schalkneethling.github.io/mdn-fiori/patterns/js/comments/</link>
+      <link>https://mdn.github.io/mdn-fiori/patterns/js/comments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/js/comments/</guid>
+      <guid>https://mdn.github.io/mdn-fiori/patterns/js/comments/</guid>
       <description>Comments Documenting functions When documenting functions use the following convetions. Always use the /** ... */ format to wrap your comments
 /** * Adds a new user to the database */ function addUser(user) { ... return status; }  Documentation for each parameter should consist of the expected type, the name, and a description of its use.
 /** * Adds a new user to the database * @param {Object} user - The user to be added */ function addUser(user) { .</description>
@@ -23,10 +23,10 @@
     
     <item>
       <title>Whitespace</title>
-      <link>https://schalkneethling.github.io/mdn-fiori/patterns/js/whitespace/</link>
+      <link>https://mdn.github.io/mdn-fiori/patterns/js/whitespace/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/js/whitespace/</guid>
+      <guid>https://mdn.github.io/mdn-fiori/patterns/js/whitespace/</guid>
       <description>General Use soft tabs set to 4 spaces.
 Sad Face function highlight() { ∙∙let header; }  Happy Face function highlight() { ∙∙∙∙let header; }  Code Blocks Place 1 space before the leading brace
 Sad Face function highlight(){ ∙∙let header; }  Happy Face function highlight() { ∙∙∙∙let header; }  Control Statements Place 1 space before the opening parenthesis in control statements (if, while etc.).
