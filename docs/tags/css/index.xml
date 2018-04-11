@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Css on MDN Fiori</title>
-    <link>https://schalkneethling.github.io/mdn-fiori/tags/css/</link>
+    <link>https://mdn.github.io/mdn-fiori/tags/css/</link>
     <description>Recent content in Css on MDN Fiori</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://schalkneethling.github.io/mdn-fiori/tags/css/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mdn.github.io/mdn-fiori/tags/css/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Formatting</title>
-      <link>https://schalkneethling.github.io/mdn-fiori/patterns/css/formatting/</link>
+      <link>https://mdn.github.io/mdn-fiori/patterns/css/formatting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/css/formatting/</guid>
+      <guid>https://mdn.github.io/mdn-fiori/patterns/css/formatting/</guid>
       <description>General  Use 4 spaces (no tabs) for indentation Prefer dashes over camelCasing in class names. Do not use ID selectors When using multiple selectors in a rule declarations, give each selector its own line. Put a space before the opening brace { in rule declarations In properties, put a space after, but not before, the : character. Put closing braces } of rule declarations on a new line Put blank lines between rule declarations Avoid the use of !</description>
     </item>
     
     <item>
       <title>Iconography</title>
-      <link>https://schalkneethling.github.io/mdn-fiori/patterns/css/iconography/</link>
+      <link>https://mdn.github.io/mdn-fiori/patterns/css/iconography/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/css/iconography/</guid>
+      <guid>https://mdn.github.io/mdn-fiori/patterns/css/iconography/</guid>
       <description>The following is a list of icons used across MDN Web Docs. As part of each icon, the HTML used to add them to a page is included.
 Website Icons {% include &amp;quot;includes/icons/facebook.svg&amp;quot; %}  {% include &amp;quot;includes/icons/github.svg&amp;quot; %}  {% include &amp;quot;includes/icons/instagram.svg&amp;quot; %}  {% include &amp;quot;includes/icons/jsfiddle.svg&amp;quot; %}  {% include &amp;quot;includes/icons/linkedin.svg&amp;quot; %}  {% include &amp;quot;includes/icons/stack-overflow.svg&amp;quot; %}  {% include &amp;quot;includes/icons/twitter.svg&amp;quot; %}  Arrows {% include &amp;quot;includes/icons/caret-down.svg&amp;quot; %}  {% include &amp;quot;includes/icons/caret-right.</description>
     </item>
     
     <item>
       <title>Terminology</title>
-      <link>https://schalkneethling.github.io/mdn-fiori/patterns/css/terminology/</link>
+      <link>https://mdn.github.io/mdn-fiori/patterns/css/terminology/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/css/terminology/</guid>
+      <guid>https://mdn.github.io/mdn-fiori/patterns/css/terminology/</guid>
       <description>Rule Declaration A rule declaration generally consist of one or more selectors, and a list of properties. For example:
 .class-name { display: block; margin: 0; }  Selector A selector matches the element(s) to which the style rules will be applied. Selectors can be any combination of a class name, a HTML attribute as well as psuedo-classes and psuedo-elements. For more details on selectors, see the W3C CSS selectors specification.</description>
     </item>
     
     <item>
       <title>UI Actions</title>
-      <link>https://schalkneethling.github.io/mdn-fiori/patterns/components/actions/</link>
+      <link>https://mdn.github.io/mdn-fiori/patterns/components/actions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/components/actions/</guid>
+      <guid>https://mdn.github.io/mdn-fiori/patterns/components/actions/</guid>
       <description>Links CTA Link  Launch ↗   .cta-link { position: relative; display: inline-block; color: #333; padding: 10px 30px 10px 0; border-bottom: 2px solid; font-family: &#39;Open Sans&#39;, Helvetica Neue, sans-serif; font-size: 17px; text-align: left; text-decoration: none; box-sizing: border-box; } .cta-link:hover, .cta-link:focus { text-decoration: none; } .icon-arrow { position: absolute; top: 30%; right: 0; width: 16px; height: 16px; transition: right .2s; } .cta-link:hover .icon-arrow, .cta-link:focus .icon-arrow { right: -5px; }  Learn web development      (function() { var root = document.</description>
     </item>
     

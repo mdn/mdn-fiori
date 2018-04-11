@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SCSS on MDN Fiori</title>
-    <link>https://schalkneethling.github.io/mdn-fiori/patterns/scss/</link>
+    <link>https://mdn.github.io/mdn-fiori/patterns/scss/</link>
     <description>Recent content in SCSS on MDN Fiori</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://schalkneethling.github.io/mdn-fiori/patterns/scss/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mdn.github.io/mdn-fiori/patterns/scss/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>General Syntax</title>
-      <link>https://schalkneethling.github.io/mdn-fiori/patterns/scss/syntax/</link>
+      <link>https://mdn.github.io/mdn-fiori/patterns/scss/syntax/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/scss/syntax/</guid>
+      <guid>https://mdn.github.io/mdn-fiori/patterns/scss/syntax/</guid>
       <description>General  Use the .scss syntax, never the original .sass syntax Order your regular CSS and @include declarations logically (see below)  Ordering of property declarations List all standard CSS properties, followed by @include and nested selectors:
 .card { display: flex; margin: 10px; @include set-font-size(18px); .title { color: $text-color; font-weight: bold; } }  Variables Prefer dash-cased variable names (e.g. $my-variable) over camelCased or snake_cased variable names
 Mixins Mixins should be used to DRY up your code, add clarity, or abstract complexity.</description>
@@ -23,10 +23,10 @@ Mixins Mixins should be used to DRY up your code, add clarity, or abstract compl
     
     <item>
       <title>Colour Variables</title>
-      <link>https://schalkneethling.github.io/mdn-fiori/patterns/scss/variables/</link>
+      <link>https://mdn.github.io/mdn-fiori/patterns/scss/variables/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/scss/variables/</guid>
+      <guid>https://mdn.github.io/mdn-fiori/patterns/scss/variables/</guid>
       <description>All SCSS variables are defined in kuma/static/styles/includes/_vars.scss
 Colours Base Colours   $red | #e66465
    $orange | #f69d3c
@@ -42,19 +42,19 @@ Colours Base Colours   $red | #e66465
     
     <item>
       <title>Spacing Variables</title>
-      <link>https://schalkneethling.github.io/mdn-fiori/patterns/scss/spacing/</link>
+      <link>https://mdn.github.io/mdn-fiori/patterns/scss/spacing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/scss/spacing/</guid>
+      <guid>https://mdn.github.io/mdn-fiori/patterns/scss/spacing/</guid>
       <description> Spacing  $gutter-width: 24px $content-block-margin: 24px $mobile-center-spacing: 15px  </description>
     </item>
     
     <item>
       <title>-remify function</title>
-      <link>https://schalkneethling.github.io/mdn-fiori/patterns/scss/remify/</link>
+      <link>https://mdn.github.io/mdn-fiori/patterns/scss/remify/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/scss/remify/</guid>
+      <guid>https://mdn.github.io/mdn-fiori/patterns/scss/remify/</guid>
       <description>The remify function converts pixel based units into rem based units. If you pass in any unit other than px, the exact same value will be returned.
 @function -remify($value) { $u: unit($value); $v: 0; @if $u == &#39;px&#39; { $v: $value/$body-font-size * 1rem; } @else { $v: unit($value, u); } @return $v; }  Example font-size: -remify(16px);  This will result in the following output
 font-size: 1rem;  This is currently only used internally by the set-font-size mixin.</description>
@@ -62,10 +62,10 @@ font-size: 1rem;  This is currently only used internally by the set-font-size mi
     
     <item>
       <title>bidi - l10n utilities</title>
-      <link>https://schalkneethling.github.io/mdn-fiori/patterns/scss/bidi/</link>
+      <link>https://mdn.github.io/mdn-fiori/patterns/scss/bidi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/scss/bidi/</guid>
+      <guid>https://mdn.github.io/mdn-fiori/patterns/scss/bidi/</guid>
       <description>The bidi mixins are used to declare both the LTR and RTL values for a property together and output appropriate declarations. This makes it easier to maintain the RTL version since you only have to update values in one place.
 accepts: a list of lists - each list must have 3 or 4 values
 A list with three properties overrides the ltr value in rtl locales
@@ -74,10 +74,10 @@ A list with three properties overrides the ltr value in rtl locales
     
     <item>
       <title>set-font-size mixin</title>
-      <link>https://schalkneethling.github.io/mdn-fiori/patterns/scss/set-font-size/</link>
+      <link>https://mdn.github.io/mdn-fiori/patterns/scss/set-font-size/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://schalkneethling.github.io/mdn-fiori/patterns/scss/set-font-size/</guid>
+      <guid>https://mdn.github.io/mdn-fiori/patterns/scss/set-font-size/</guid>
       <description>The set-font-size mixin takes a single value. If the value&amp;rsquo;s unit of measure is pixels, it will return two versions of the font-size rule. One will use the original pixel value, and the second will be an equivalent font size using rem.
 @mixin set-font-size($value) { font-size: $value; // if this is px it will be the fallback for the rem value, otherwise it will be the only declaration @if ($value !</description>
     </item>

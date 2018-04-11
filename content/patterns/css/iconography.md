@@ -97,6 +97,24 @@ The following is a list of icons used across MDN Web Docs. As part of each icon,
 {% include "includes/icons/check-mark.svg" %}
 ```
 
+!['language'](/images/icons/general/language.svg)
+
+```html
+{% include "includes/icons/language.svg" %}
+```
+
+!['clock'](/images/icons/general/clock.svg)
+
+```html
+{% include "includes/icons/clock.svg" %}
+```
+
+!['paperclip'](/images/icons/general/paperclip.svg)
+
+```html
+{% include "includes/icons/paperclip.svg" %}
+```
+
 ![''](/images/icons/general/star.svg)
 
 ```html
@@ -153,4 +171,24 @@ The following is a list of icons used across MDN Web Docs. As part of each icon,
 
 ```html
 {% include "includes/icons/undo.svg" %}
+```
+
+!['eye'](/images/icons/tools/eye.svg)
+
+```html
+{% include "includes/icons/eye.svg" %}
+```
+
+!['gear'](/images/icons/tools/gear.svg)
+
+```html
+{% include "includes/icons/gear.svg" %}
+```
+
+## User
+
+!['group'](/images/icons/user/group.svg)
+
+```html
+{% include "includes/icons/group.svg" %}
 ```
