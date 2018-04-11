@@ -1,0 +1,29 @@
+{
+  "projectName": "MDN-Fiori",
+  "projectOwner": "Mozilla",
+  "repoType": "github",
+  "repoHost": "https://github.com/mdn/mdn-fiori/",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "contributors": [
+      {
+            "login": "schalkneethling",
+            "name": "Schalk Neethling",
+            "avatar_url":
+                "https://avatars3.githubusercontent.com/u/10350960?s=460&v=4",
+            "profile": "https://github.com/schalkneethling",
+            "contributions": ["code", "doc"]
+        },
+        {
+            "login": "coogie",
+            "name": "Stephen Coogan",
+            "avatar_url":
+                "https://avatars3.githubusercontent.com/u/1271105?s=460&v=4",
+            "profile": "https://github.com/coogie",
+            "contributions": ["code", "doc"]
+        }
+  ]
+}

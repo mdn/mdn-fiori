@@ -28,16 +28,16 @@ Mixins Mixins should be used to DRY up your code, add clarity, or abstract compl
       
       <guid>https://mdn.github.io/mdn-fiori/patterns/scss/variables/</guid>
       <description>All SCSS variables are defined in kuma/static/styles/includes/_vars.scss
-Colours Base Colours $red | #e66465
-$orange | #f69d3c
-$yellow | #f6b73c
-$green | #4d9f0c
-$blue | #3f87a6
-$purple | #9198e5
-$grey | #696969
- Lighter Base Shades $red-light | #ffe7e8
-$orange-light | #ffe8d4
-$yellow-light | #fff3d4</description>
+Colours Base Colours   $red | #e66465
+   $orange | #f69d3c
+   $yellow | #f6b73c
+   $green | #4d9f0c
+   $blue | #3f87a6
+   $purple | #9198e5
+   $grey | #696969
+  Lighter Base Shades   $red-light | #ffe7e8
+   $orange-light | #ffe8d4
+   $yellow-light | #fff3d4</description>
     </item>
     
     <item>
