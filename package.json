@@ -16,14 +16,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:schalkneethling/mdn-fiori.git"
+    "url": "git@github.com:mdn/mdn-fiori.git"
   },
   "author": "Mozilla",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/schalkneethling/mdn-fiori/issues"
+    "url": "https://github.com/mdn/mdn-fiori/issues"
   },
-  "homepage": "https://github.com/schalkneethling/mdn-fiori/#readme",
+  "homepage": "https://github.com/mdn/mdn-fiori/#readme",
   "devDependencies": {
     "pre-commit": "^1.2.2",
     "sw-precache": "^5.2.0"

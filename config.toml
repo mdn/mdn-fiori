@@ -1,6 +1,6 @@
 languageCode = "en-us"
 title = "MDN Fiori"
-baseURL = "https://schalkneethling.github.io/mdn-fiori/"
+baseURL = "https://mdn.github.io/mdn-fiori/"
 canonifyURLs = true
 theme = "mdn-fiori"
 publishDir = "docs"
