@@ -4,6 +4,8 @@
   "description": "Front-End style guide and pattern library for MDN Web Docs - Built with cupper",
   "main": "index.js",
   "scripts": {
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate",
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "hugo server --baseURL http://localhost:1313",
     "clean": "node lib/clean.js",
@@ -25,6 +27,7 @@
   },
   "homepage": "https://github.com/mdn/mdn-fiori/#readme",
   "devDependencies": {
+    "all-contributors-cli": "^4.11.1",
     "pre-commit": "^1.2.2",
     "sw-precache": "^5.2.0"
   },
