@@ -1,21 +1,12 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { Button } from "@storybook/react/demo";
 
-import { Row } from "../src/layout.jsx";
-import { Dropdown } from "../src/header/dropdown.jsx";
+import { css } from "@emotion/core";
 
-storiesOf("Button", module)
-  .add("with text", () => <Button>Hello Button</Button>)
-  .add("with emoji", () => (
-    <Button>
-      <span role="img" aria-label="so cool">
-        😀 😎 👍 💯
-      </span>
-    </Button>
-  ));
+import { Row, Strut } from "../src/layout.jsx";
+import Dropdown from "../src/header/dropdown.jsx";
 
-storiesOf("Dropdown", module).add("with emoji", () => {
+storiesOf("Dropdown", module).add("Main menu", () => {
   const styles = {
     menus: css({
       gridArea: "M",
@@ -47,32 +38,18 @@ storiesOf("Dropdown", module).add("with emoji", () => {
     }
   ];
 
-  function fixurl(url) {
-    // The "Report a content issue" menu item has a link that requires
-    // the document slug, so we work that in here.
-    url = url.replace("{{SLUG}}", encodeURIComponent(documentData.slug));
-    if (!url.startsWith("https://")) {
-      url = `/${locale}/docs/${url}`;
-    }
-    return url;
-  }
-
   return menus.map((m, index) => (
     <Row css={styles.menus}>
       <React.Fragment key={index}>
-        <Dropdown label={<a href={fixurl(m.url)}>{gettext(m.label)}</a>}>
+        <Dropdown label={<a href={m.url}>{m.label}</a>}>
           {m.items.map((item, index) => (
             <li key={index}>
               {item.external ? (
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={fixurl(item.url)}
-                >
-                  {gettext(item.label)} &#x1f310;
+                <a target="_blank" rel="noopener noreferrer" href={item.url}>
+                  {item.label} &#x1f310;
                 </a>
               ) : (
-                <a href={fixurl(item.url)}>{gettext(item.label)}</a>
+                <a href={item.url}>{item.label}</a>
               )}
             </li>
           ))}
