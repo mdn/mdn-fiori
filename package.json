@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/mdn/mdn-fiori/#readme",
   "devDependencies": {
-    "all-contributors-cli": "^6.9.1"
+    "all-contributors-cli": "^6.9.3"
   },
   "dependencies": {}
 }
