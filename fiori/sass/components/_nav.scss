@@ -1,0 +1,7 @@
+.sidebar {
+  padding: 40px;
+
+  ul {
+    @include unordered-list-base();
+  }
+}

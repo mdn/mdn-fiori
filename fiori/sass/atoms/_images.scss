@@ -1,0 +1,14 @@
+.example-screenshot {
+  border: 5px solid #edecec;
+  width: 750px;
+  box-shadow: 5px 5px 5px #25374047;
+
+  &::before {
+    @include gradient-border();
+    margin-bottom: 0;
+  }
+
+  figcaption {
+    @include visually-hidden();
+  }
+}

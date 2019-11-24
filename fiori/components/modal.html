@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mozilla Developer ~ MDN Fiori</title>
+    <link rel="stylesheet" href="../css/lib/reset.css" media="screen" />
+    <link rel="stylesheet" href="../css/mdn-fiori.css" media="screen" />
+</head>
+
+<body>
+    <header class="page-header">
+        <a href="/">
+            <h1 class="logo">
+                <span>MDN Web Docs</span>
+            </h1>
+        </a>
+    </header>
+    <nav class="sidebar">
+        <ul>
+            <li>
+                <a href="components/modal.html">Modal</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h1>MDN Fiori</h1>
+
+        <section>
+            <header>
+                <h2>Modals</h2>
+            </header>
+            <p>Modals are used to present content to a user that is overlayed over the current page content.</p>
+
+            <h3>Example</h3>
+            <figure class="example-screenshot">
+                <img src="../media/components/modal.png" width="750" alt="" />
+                <figcaption class="visually-hidden">Screenshot of a modal dialog</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <header>
+                <h2>Usage</h2>
+            </header>
+            <p>Modals should be used when a user initiates a specific task that can be started and completed within the
+                context of the modal.</p>
+            <p>The content of a modal should be focused, clear and concise.</p>
+        </section>
+
+        <section>
+            <header>
+                <h2>Implementation</h2>
+            </header>
+            <p>The MDN Web Docs codebase contains the core code for a modal. Below are the steps you should follow when
+                implementing a new modal.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Platform</th>
+                        <th>Available</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jinja</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>React</td>
+                        <td>No</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>The Bundles</h3>
+            <p>The core of a modal consists of semantic HTML, Sass as well as JavaScript.</p>
+
+            <h3>The Structure</h3>
+            <p>Modals are currently implemented using Jinja. For this we have a base
+                template you will extend when implementing your modal.</p>
+            <p>To demonstrate the process, we will walk through creating a new authentication modal.</p>
+            <p>As this will be used on all pages of the site, we will create our HTML file(<code>auth-modal.html</code>)
+                inside <code>jinja2/includes</code>.</p>
+            <p>Once you have created the new HTML file, the very first thing is to extend the base modal template:</p>
+            <pre class="code-block"><code>
+{% extend "includes/modal.html" %}
+            </code></pre>
+            <p>This adds the overall HTML structure for our modal. Before we add the main body of the modal, there
+                are a couple of variables we need to set.</p>
+            <pre class="code-block"><code>
+{% set modal_id = "auth-modal" %}
+{% set modal_content_class = "auth-providers" %}
+{% set modal_title = _('Sign In') %}
+            </code></pre>
+            <p>To provide a hook for our JavaScript we give the modal a unique <code>id</code> via
+                <code>modal_id</code>. To add some custom
+                styling to our modal we also give it it’s own <code>class</code> via <code>modal_content_class</code>.
+                Finally, we set the main title of our modal via <code>modal_title</code></p>
+            <p>The body of the modal is added inside the <code>modal_content</code> block:</p>
+            <pre class="code-block"><code>
+{% block modal_content %}
+...
+{% endblock %}
+            </code></pre>
+            <p>While the body of the modal can contain anything, you should always keep in mind that a modal should be
+                task specific. We should therefore keep content to the minimum. Continuing with the Auth modal as an
+                example, the content would look as follows:</p>
+            <pre class="code-block"><code>
+{% block modal_content %}
+&lt;p>
+    {{ _('Sign in to enjoy the benefits of an MDN account.') }}
+&lt;/p>
+&lt;div class="auth-button-container">
+    &lt;a href="{{ provider_login_url('github') }}" class="github-auth" data-first-focusable="true">
+        {{ _('Sign in with Github') }}
+    &lt;/a>
+    &lt;a href="{{ provider_login_url('github') }}" class="google-auth">
+        {{ _('Sign in with Google') }}
+    &lt;/a>
+&lt;/div>
+{% endblock %}
+            </code></pre>
+            <p>With the structure in place, we can move on to the styling and interactivity.</p>
+            <h3>Style and Interactivity</h3>
+            <p>All relevant styling is provided by <code>modal.scss</code> and can be added to your main Sass file with
+                the following import</p>
+            <p><code>@import '../components/modal.scss';</code></p>
+            <p>The JavaScript that drives all interaction is provided by <code>modal.js</code>. Here the configuration
+                of the final bundle is done via a pipeline entry in <code>common.py</code></p>
+            <p>For example, we can create a JavaScript bundle for the auth modal as follows:
+            </p>
+            <pre class="code-block"><code>
+'auth-modal': {
+  'source_filenames': (
+    'js/components/modal.js',
+    'js/components/user-signup/auth-modal.js',
+  ),
+  'output_filename': 'build/js/auth-modal.js',
+  'extra_context': {
+    'async': True,
+  },
+},
+            </code></pre>
+            <p>With the above in place you can add the JavaScript bundle to the relevant template as follows:</p>
+            <p><code>{% javascript 'auth-modal' %}</code></p>
+            <p>All that remains is to add the custom CSS and JavaScript your modal will require.</p>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="https://developer.mozilla.org/">MDN Web Docs</a></li>
+            <li><a href="https://github.com/schalkneethling/mdn-minimalist">mdn-minimalist</a></li>
+            <li><a href="https://github.com/schalkneethling/mdn-storybook">mdn-storybook</a></li>
+            <li><a href="https://github.com/schalkneethling/mdn-dinocons">mdn-dinocons</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
