@@ -1,0 +1,41 @@
+@font-face {
+  font-family: zillaslab;
+  font-display: swap;
+  src: url("../../media/typography/ZillaSlab-Bold.subset.woff2") format("woff2"),
+    url("../../media/typography/ZillaSlab-Bold.subset.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+  font-family: zillaslab;
+}
+
+/* Based on a modular scale: https://www.modularscale.com/?18&px&1.5 */
+h1 {
+  font-size: $h1-font-size;
+}
+
+h2 {
+  font-size: $h2-font-size;
+}
+
+h3 {
+  font-size: $h3-font-size;
+}
+
+h4 {
+  font-size: $h4-font-size;
+}
+
+p {
+  margin-bottom: $paragraph-spacing;
+  @include readable-line-length();
+}
+
+p,
+ul {
+  font-size: $base-font-size;
+}

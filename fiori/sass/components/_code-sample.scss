@@ -1,0 +1,12 @@
+code,
+.code-block {
+  background-color: #edecec;
+}
+
+.code-block {
+  display: block;
+  padding: 20px;
+  border-left: 5px solid $brand-primary;
+  max-width: 80%;
+  overflow: scroll;
+}

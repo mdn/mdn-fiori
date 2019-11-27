@@ -1,0 +1,25 @@
+@mixin base-grid() {
+  display: grid;
+  grid-template-columns: 12em 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer";
+}
+
+.page-header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}

@@ -1,0 +1,7 @@
+@mixin gradient-border() {
+  display: block;
+  content: "";
+  background-image: $gradient-strip;
+  margin-bottom: $base-margin;
+  height: 5px;
+}

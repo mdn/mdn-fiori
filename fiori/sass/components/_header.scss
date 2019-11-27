@@ -1,0 +1,7 @@
+.page-header {
+  &::before {
+    @include gradient-border();
+  }
+
+  @import "../atoms/logo";
+}

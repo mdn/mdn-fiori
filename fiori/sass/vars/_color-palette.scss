@@ -1,0 +1,12 @@
+$base-background-color: #fff;
+$text-color: #333;
+
+$brand-primary: #015fdf;
+
+$gradient-start-color: #3794bc;
+$gradient-end-color: #7556ce;
+$gradient-strip: linear-gradient(
+  -271deg,
+  $gradient-start-color,
+  $gradient-end-color
+);
