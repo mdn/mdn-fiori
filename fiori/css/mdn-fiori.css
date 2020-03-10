@@ -80,7 +80,8 @@ table {
 
 .example-screenshot {
   border: 5px solid #edecec;
-  width: 750px;
+  width: 500px;
+  width: max-content;
   box-shadow: 5px 5px 5px #25374047; }
   .example-screenshot::before {
     display: block;
