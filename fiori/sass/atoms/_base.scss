@@ -1,7 +1,0 @@
-body {
-  background-color: $base-background-color;
-  color: $text-color;
-  font: $base-font-size sans-serif;
-  line-height: $base-line-height;
-  @include base-grid();
-}
