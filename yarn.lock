@@ -2743,10 +2743,10 @@ maximatch@^0.1.0:
     arrify "^1.0.0"
     minimatch "^3.0.0"
 
-mdn-minimalist@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/mdn-minimalist/-/mdn-minimalist-0.0.2.tgz#b20a1d441f8d24a7b05358a451cf2d89741843a8"
-  integrity sha512-t2+hSpbMXg1FsQsJf2WR0jDPmtkbvI2s6SpIXkaD+YLjBd4zHwWntmDCzmos/GSagmas7yBecCavWdQQx8/NBQ==
+mdn-minimalist@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/mdn-minimalist/-/mdn-minimalist-0.0.7.tgz#ab2a7c2ed209e26201a254cc53c4bd682f41051a"
+  integrity sha512-53XQJEZZcwmefK0vftIYd7Onpbb8jLSbRGwPLPYihT1hQPhfFwieSq1gtFH4B+POoptIKOA/ftwCWTlbRWtbMQ==
 
 mdurl@^1.0.1:
   version "1.0.1"
