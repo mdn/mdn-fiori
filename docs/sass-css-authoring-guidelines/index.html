@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our SCSS and CSS Authoring Guidelines - MDN Fiori</title>
+    <link rel="stylesheet" type="text/css" href="/css/lib/prism-a11y-dark.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/css/mdn-minimalist.css" media="screen" />
+  </head>
+  <body>
+    <h1>Our SCSS and CSS Authoring Guidelines</h1>
+<h2>Formatting</h2>
+<p>All formatting for <code>SCSS</code> and <code>CSS</code> files are auto formatted using <a href="https://prettier.io">Prettier</a> defaults.
+All projects should have the following dependencies installed and base configuration.</p>
+<p>In the root of the project should be a file called <code>.prettierrc</code> with the following contents:</p>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span><span class="token punctuation">}</span></code></pre>
+<h3>Dependencies</h3>
+<ul>
+<li><a href="https://www.npmjs.com/package/prettier">Prettier</a></li>
+<li><a href="https://www.npmjs.com/package/pretty-quick">pretty-quick</a></li>
+<li><a href="https://www.npmjs.com/package/husky">husky</a></li>
+</ul>
+<p>Install the above with:</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">yarn</span> <span class="token function">add</span> prettier pretty-quick husky --dev</code></pre>
+<h3>NPM scripts</h3>
+<p>Inside <code>package.json</code> add the following inside the <code>scripts</code> block:</p>
+<pre class="language-json"><code class="language-json">...<br><span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>  ...<br>  <span class="token property">"precommit"</span><span class="token operator">:</span> <span class="token string">"npm run prettier:staged"</span><span class="token punctuation">,</span><br>  <span class="token property">"prettier:check"</span><span class="token operator">:</span> <span class="token string">"prettier --check **/*.scss"</span><span class="token punctuation">,</span><br>  <span class="token property">"prettier:format"</span><span class="token operator">:</span> <span class="token string">"prettier --write **/*.scss"</span><span class="token punctuation">,</span><br>  <span class="token property">"prettier:staged"</span><span class="token operator">:</span> <span class="token string">"pretty-quick --staged --pattern \"**/*.scss\""</span><span class="token punctuation">,</span><br>  ...<br><span class="token punctuation">}</span><span class="token punctuation">,</span><br>...</code></pre>
+<p>You also need to tell Husky to run our <code>precommit</code> hook. Add the following to the end of your <code>package.json</code></p>
+<pre class="language-json"><code class="language-json"><span class="token property">"husky"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>  <span class="token property">"hooks"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>    <span class="token property">"pre-commit"</span><span class="token operator">:</span> <span class="token string">"yarn run precommit"</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<h3>Configure your editor</h3>
+<p>For details on configuring Prettier for your chosen editor, please follow
+the <a href="https://prettier.io/docs/en/editors.html">instructions on the Prettier website</a>.</p>
+<p>With the above set-up, you no longer have to worry about formatting your files and
+can simply let Prettier take care of it o/\o</p>
+<h2>Linting</h2>
+<p>Besides code style, we also enforce some general code quality via <a href="https://stylelint.io/">Stylelint</a>.</p>
+<p>The following configuration and dependencies need to be present for all projects.</p>
+<p>In the root of the project add a file named <code>.stylelintrc.json</code> with the following contents:</p>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span><br>  <span class="token property">"extends"</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>    <span class="token string">"stylelint-config-recommended"</span><span class="token punctuation">,</span><br>    <span class="token string">"stylelint-config-recommended-scss"</span><span class="token punctuation">,</span><br>    <span class="token string">"stylelint-config-sass-guidelines"</span><span class="token punctuation">,</span><br>    <span class="token string">"stylelint-a11y/recommended"</span><span class="token punctuation">,</span><br>    <span class="token string">"stylelint-prettier/recommended"</span><br>  <span class="token punctuation">]</span><span class="token punctuation">,</span><br>  <span class="token property">"rules"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>    <span class="token property">"max-nesting-depth"</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span><br>    <span class="token property">"declaration-no-important"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span><br>    <span class="token property">"font-weight-notation"</span><span class="token operator">:</span> <span class="token string">"named-where-possible"</span><span class="token punctuation">,</span><br>    <span class="token property">"color-hex-length"</span><span class="token operator">:</span> <span class="token string">"short"</span><span class="token punctuation">,</span><br>    <span class="token property">"selector-pseudo-element-colon-notation"</span><span class="token operator">:</span> <span class="token string">"double"</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<h3>Dependencies</h3>
+<ul>
+<li><a href="https://www.npmjs.com/package/stylelint">stylelint</a></li>
+<li><a href="https://www.npmjs.com/package/stylelint-a11y">stylelint-a11y</a></li>
+<li><a href="https://www.npmjs.com/package/stylelint-prettier">stylelint-prettier</a></li>
+<li><a href="https://www.npmjs.com/package/stylelint-config-prettier">stylelint-config-prettier</a></li>
+<li><a href="https://www.npmjs.com/package/stylelint-config-recommended">stylelint-config-recommended</a></li>
+</ul>
+<p>Because we use <a href="https://sass-lang.com/"><code>Sass\SCSS</code></a> to write our <code>CSS</code>, you also need the following:</p>
+<ul>
+<li><a href="https://www.npmjs.com/package/stylelint-scss">stylelint-scss</a></li>
+<li><a href="https://www.npmjs.com/package/stylelint-config-recommended-scss">stylelint-config-recommended-scss</a></li>
+<li><a href="https://www.npmjs.com/package/stylelint-config-sass-guidelines">stylelint-config-sass-guidelines</a></li>
+</ul>
+<pre class="language-bash"><code class="language-bash"><span class="token function">yarn</span> <span class="token function">add</span> stylelint stylelint-a11y stylelint-prettier stylelint-config-prettier stylelint-config-recommended stylelint-scss stylelint-config-recommended-scss stylelint-config-sass-guidelines --dev</code></pre>
+<h3>NPM scripts</h3>
+<p>Inside <code>package.json</code> add the following inside the <code>scripts</code> block:</p>
+<pre class="language-json"><code class="language-json">...<br><span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>  ...<br>  <span class="token property">"lint"</span><span class="token operator">:</span> <span class="token string">"stylelint sass/**/*.scss"</span><span class="token punctuation">,</span><br>  ...<br><span class="token punctuation">}</span><span class="token punctuation">,</span><br>...</code></pre>
+<h3>Configure your editor</h3>
+<p>To configure your editor for <code>stylelint</code>, please <a href="https://stylelint.io/user-guide/integrations/editor">read the instructions on the Stylelint website</a>.</p>
+<h2>The rules</h2>
+<p>With the above set-up your editor will inform you whever the code you write does not pass the linting rules. You can incrementally learn what the rules are that we adhere to by writing code and reacting to any warnings or errors.</p>
+<p>There is benefit to having a general understanding of what these rules are though.
+Because we use Prettier, we do not use any of the Stylelint rules that are simply
+around code style. We do however turn on <a href="https://stylelint.io/user-guide/rules/list#possible-errors">all possible errors</a> via the <code>stylelint-config-recommended</code> sharable config so, having a read over those is a good idea.</p>
+<p>In addition to the above rules, we also enable the following:</p>
+<pre class="language-json"><code class="language-json"><span class="token property">"rules"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>  <span class="token property">"max-nesting-depth"</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span><br>  <span class="token property">"declaration-no-important"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span><br>  <span class="token property">"font-weight-notation"</span><span class="token operator">:</span> <span class="token string">"named-where-possible"</span><span class="token punctuation">,</span><br>  <span class="token property">"color-hex-length"</span><span class="token operator">:</span> <span class="token string">"short"</span><span class="token punctuation">,</span><br>  <span class="token property">"selector-pseudo-element-colon-notation"</span><span class="token operator">:</span> <span class="token string">"double"</span><br><span class="token punctuation">}</span></code></pre>
+<h3>max-nesting-depth</h3>
+<p>In general one level of nesting is sufficient for most cases. We do acknowledge that this is not always reasonable and so, we allow up to two levels of nesting. i.e.</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">a</span> <span class="token punctuation">{</span><br>  <span class="token selector">b</span> <span class="token punctuation">{</span><br>    <span class="token comment">/* 1 */</span><br>    <span class="token selector">.foo</span> <span class="token punctuation">{</span><br>    <span class="token punctuation">}</span> <span class="token comment">/* 2 */</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<p>The following would therefore be an error:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">a</span> <span class="token punctuation">{</span><br>  <span class="token selector">b</span> <span class="token punctuation">{</span><br>    <span class="token comment">/* 1 */</span><br>    <span class="token selector">.foo</span> <span class="token punctuation">{</span><br>      <span class="token comment">/* 2 */</span><br>      <span class="token selector">input</span> <span class="token punctuation">{</span><br>        <span class="token comment">/* 3 */</span><br>      <span class="token punctuation">}</span><br>    <span class="token punctuation">}</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<p>You can <a href="https://stylelint.io/user-guide/rules/max-nesting-depth">read more about the rule here</a>.</p>
+<h3>declaration-no-important</h3>
+<p>The use of the <code>!important</code> in declarations are not allowed and there will have to be a very compelling reason for us to consider an <a href="https://stylelint.io/user-guide/ignore-code">exception</a>.</p>
+<p>You can <a href="https://stylelint.io/user-guide/rules/declaration-no-important">read more about the rule here</a>.</p>
+<h3>font-weight-notation</h3>
+<p>For this rule we have opted for <a href="https://stylelint.io/user-guide/rules/font-weight-notation#named-where-possible"><code>named-where-possible</code></a>. This means you have the freedom to use numeric values for your font weights unless those weights are <code>400</code> or <code>700</code>. These are equivalent to the named values <code>normal</code> and <code>bold</code> which are preferred.</p>
+<p>You can <a href="https://stylelint.io/user-guide/rules/font-weight-notation">read more about the rule here</a>.</p>
+<h3>color-hex-length</h3>
+<p>For this rule we have opted for the industry standard of <a href="https://stylelint.io/user-guide/rules/color-hex-length#short"><code>short</code></a>. This means that <code>#000</code> is correct, while <code>#000000</code> will cause an error.</p>
+<p>You can <a href="https://stylelint.io/user-guide/rules/color-hex-length">read more about the rule here</a>.</p>
+<h3>selector-pseudo-element-colon-notation</h3>
+<p>For this rule we have chosen the <a href="https://stylelint.io/user-guide/rules/selector-pseudo-element-colon-notation#double"><code>double</code></a> option.</p>
+<p>From the documentation</p>
+<blockquote>
+<p>The :: notation was chosen for pseudo-elements to establish a discrimination between pseudo-classes (which subclass existing elements) and pseudo-elements (which are elements not represented in the document tree).</p>
+</blockquote>
+<p>NOTE: The above is a web standard and not just a Stylelint convention</p>
+<p>This means that <code>::before</code> is valid, while <code>:before</code> will cause an error.</p>
+<p>You can <a href="https://stylelint.io/user-guide/rules/selector-pseudo-element-colon-notation">read more about the rule here</a>.</p>
+
+  </body>
+</html>
