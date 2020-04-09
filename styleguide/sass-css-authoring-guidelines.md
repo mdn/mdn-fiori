@@ -6,6 +6,12 @@ tags: css
 
 # {{ title }}
 
+The Minimalist codebase is written in Sass(using the `SCSS` variant), an extension to the `CSS` language.
+
+> Sass is a CSS preprocessor, which adds special features such as variables, nested rules and mixins (sometimes referred to as syntactic sugar) into regular CSS. The aim is to make the coding process simpler and more efficient.
+
+For [more on Sass head over to the website](https://sass-lang.com/).
+
 ## Formatting
 
 All formatting for `SCSS` and `CSS` files are auto formatted using [Prettier](https://prettier.io) defaults.
@@ -102,11 +108,10 @@ In the root of the project add a file named `.stylelintrc.json` with the followi
 Because we use [`Sass\SCSS`](https://sass-lang.com/) to write our `CSS`, you also need the following:
 
 - [stylelint-scss](https://www.npmjs.com/package/stylelint-scss)
-- [stylelint-config-recommended-scss](https://www.npmjs.com/package/stylelint-config-recommended-scss)
 - [stylelint-config-sass-guidelines](https://www.npmjs.com/package/stylelint-config-sass-guidelines)
 
 ```bash
-yarn add stylelint stylelint-a11y stylelint-prettier stylelint-config-prettier stylelint-config-recommended stylelint-scss stylelint-config-recommended-scss stylelint-config-sass-guidelines --dev
+yarn add stylelint stylelint-a11y stylelint-prettier stylelint-config-prettier stylelint-config-recommended stylelint-scss stylelint-config-sass-guidelines --dev
 ```
 
 ### NPM scripts
