@@ -110,6 +110,8 @@ Because we use [`Sass\SCSS`](https://sass-lang.com/) to write our `CSS`, you als
 - [stylelint-scss](https://www.npmjs.com/package/stylelint-scss)
 - [stylelint-config-sass-guidelines](https://www.npmjs.com/package/stylelint-config-sass-guidelines)
 
+For details on the rules enabled by `stylelint-config-sass-guidelines`, please see the [SASS Guidelines website](https://sass-guidelin.es/).
+
 ```bash
 yarn add stylelint stylelint-a11y stylelint-prettier stylelint-config-prettier stylelint-config-recommended stylelint-scss stylelint-config-sass-guidelines --dev
 ```
@@ -146,9 +148,7 @@ In addition to the above rules, we also enable the following:
 "rules": {
   "max-nesting-depth": 2,
   "declaration-no-important": true,
-  "font-weight-notation": "named-where-possible",
-  "color-hex-length": "short",
-  "selector-pseudo-element-colon-notation": "double"
+  "font-weight-notation": "named-where-possible"
 }
 ```
 
@@ -195,23 +195,3 @@ You can [read more about the rule here](https://stylelint.io/user-guide/rules/de
 For this rule we have opted for [`named-where-possible`](https://stylelint.io/user-guide/rules/font-weight-notation#named-where-possible). This means you have the freedom to use numeric values for your font weights unless those weights are `400` or `700`. These are equivalent to the named values `normal` and `bold` which are preferred.
 
 You can [read more about the rule here](https://stylelint.io/user-guide/rules/font-weight-notation).
-
-### color-hex-length
-
-For this rule we have opted for the industry standard of [`short`](https://stylelint.io/user-guide/rules/color-hex-length#short). This means that `#000` is correct, while `#000000` will cause an error.
-
-You can [read more about the rule here](https://stylelint.io/user-guide/rules/color-hex-length).
-
-### selector-pseudo-element-colon-notation
-
-For this rule we have chosen the [`double`](https://stylelint.io/user-guide/rules/selector-pseudo-element-colon-notation#double) option.
-
-From the documentation
-
-> The :: notation was chosen for pseudo-elements to establish a discrimination between pseudo-classes (which subclass existing elements) and pseudo-elements (which are elements not represented in the document tree).
-
-NOTE: The above is a web standard and not just a Stylelint convention
-
-This means that `::before` is valid, while `:before` will cause an error.
-
-You can [read more about the rule here](https://stylelint.io/user-guide/rules/selector-pseudo-element-colon-notation).
