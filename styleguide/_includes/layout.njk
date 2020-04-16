@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }} - MDN Fiori</title>
-    <link rel="stylesheet" type="text/css" href="/css/lib/prism-a11y-dark.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/css/mdn-minimalist.css" media="screen" /
+    <link rel="stylesheet" type="text/css" href="{{ '/css/lib/prism-a11y-dark.css' | url }}" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{{ '/css/mdn-minimalist.css' | url }}" media="screen" /
     >
-    <link rel="stylesheet" type="text/css" href="/css/styleguide/styleguide.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{{ '/css/styleguide/styleguide.css' | url }}" media="screen" />
   </head>
   <body>
     {{ content | safe }}
