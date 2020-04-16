@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "MDN Web Docs Style Guide",
   "scripts": {
-    "build": "npx @11ty/eleventy --input=styleguide --output=docs",
+    "build": "npx @11ty/eleventy --input=styleguide --output=docs --pathprefix=mdn-fiori",
     "build:sass": "node-sass-chokidar ./node_modules/mdn-minimalist/sass/ -o ./styleguide/css -w",
     "build:sass:styleguide": "node-sass-chokidar ./styleguide/sass/ -o ./styleguide/css/styleguide -w",
     "build:sass:prod": "node-sass-chokidar ./node_modules/mdn-minimalist/sass/ -o ./styleguide/css",
