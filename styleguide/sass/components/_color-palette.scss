@@ -1,0 +1,60 @@
+@import "../../../node_modules/mdn-minimalist/sass/vars/color-palette";
+
+.color-palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    flex-basis: 20%;
+  }
+}
+
+.swatch {
+  border: 5px solid #eee;
+  width: 100px;
+  height: 100px;
+
+  &.brand-primary {
+    background-color: $brand-primary;
+  }
+
+  &.brand-red {
+    background-color: $brand-red;
+  }
+
+  &.brand-green {
+    background-color: $brand-green;
+  }
+
+  &.brand-grey {
+    background-color: $brand-grey;
+  }
+
+  &.blue-grey {
+    background-color: $blue-grey;
+  }
+
+  &.light-blue-grey {
+    background-color: $light-blue-grey;
+  }
+
+  &.light-grey {
+    background-color: $light-grey;
+  }
+
+  &.link-color {
+    background-color: $link-color;
+  }
+
+  &.border-color {
+    background-color: $border-color;
+  }
+}

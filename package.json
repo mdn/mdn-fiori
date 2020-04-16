@@ -5,8 +5,9 @@
   "scripts": {
     "build": "npx @11ty/eleventy --input=styleguide --output=docs",
     "build:sass": "node-sass-chokidar ./node_modules/mdn-minimalist/sass/ -o ./styleguide/css -w",
+    "build:sass:styleguide": "node-sass-chokidar ./styleguide/sass/ -o ./styleguide/css/styleguide -w",
     "serve": "npx @11ty/eleventy  --input=styleguide --output=docs --serve",
-    "start": "run-p build:sass serve"
+    "start": "run-p build:sass build:sass:styleguide serve"
   },
   "repository": {
     "type": "git",
