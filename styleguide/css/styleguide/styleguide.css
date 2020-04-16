@@ -1,0 +1,255 @@
+/* MDN SCHEME
+kuma/static/styles/includes/_vars.scss
+--------------------------------------------------
+*/
+/* MDN GENERAL
+kuma/static/styles/includes/_vars.scss
+--------------------------------------------------
+*/
+/* TODO */
+/* MDN STATES
+kuma/static/styles/includes/_vars.scss
+--------------------------------------------------
+*/
+/* MDN TOC WIKI
+kuma/static/styles/includes/_vars.scss
+--------------------------------------------------
+*/
+/* MDN EXAMPLES SYNTAX
+kuma/static/styles/components/syntax/example.scss
+--------------------------------------------------
+*/
+/* MDN PROMOTE
+kuma/static/styles/promote.scss
+--------------------------------------------------
+*/
+/* MDN CONTENT
+kuma/static/styles/components/content.scss
+This table style is also defined in 
+kuma/static/styles/includes/_vars.scss
+--------------------------------------------------
+*/
+/* MDN TAGS
+kuma/static/styles/components/tags.scss
+--------------------------------------------------
+*/
+/* MDN FORMS
+kuma/static/styles/includes/_vars.scss
+--------------------------------------------------
+*/
+/* MDN USERS
+kuma/static/styles/components/users/_vars.scss
+--------------------------------------------------
+*/
+/* MDN BANNERS
+kuma/static/styles/components/banners/_vars.scss
+--------------------------------------------------
+*/
+/* MDN PAYMENTS
+kuma/static/styles/components/payments/_vars.scss
+--------------------------------------------------
+*/
+/* MDN BCD
+Not using site default colours, to increase difference
+between colours for colour blind users
+kuma/static/styles/components/compat-tables/_vars.scss
+--------------------------------------------------
+*/
+/* MDN MAIN-NAV
+kuma/static/styles/components/structure/page-header/_vars_nav.scss
+-------------------------------------------------------------------
+*/
+.color-palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none; }
+  .color-palette ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .color-palette li {
+    flex-basis: 20%; }
+
+.swatch {
+  border: 5px solid #eee;
+  width: 150px;
+  height: 150px;
+  /* Typography */
+  /* Backgrounds */
+  /* Borders */
+  /* Gradients */
+  /* Tables */
+  /* Forms */
+  /* Buttons */
+  /* BCD */ }
+  .swatch.brand-primary {
+    background-color: #015fdf; }
+  .swatch.blue {
+    background-color: #3d7e9a; }
+  .swatch.blue-light {
+    background-color: #e4f0f5; }
+  .swatch.blue-dark {
+    background-color: #285c76; }
+  .swatch.blue-vdark {
+    background-color: #001d33; }
+  .swatch.brand-primary-200 {
+    background-color: #3d7e9a; }
+  .swatch.brand-primary-300 {
+    background-color: #3c7e9a; }
+  .swatch.brand-primary-500 {
+    background-color: #ebf4f7; }
+  .swatch.brand-primary-600 {
+    background-color: #f2f9ff; }
+  .swatch.purple {
+    background-color: #9198e5; }
+  .swatch.purple-light {
+    background-color: #d7d9f2; }
+  .swatch.purple-dark {
+    background-color: #6f74b2; }
+  .swatch.purple-vdark {
+    background-color: #303253; }
+  .swatch.brand-red {
+    background-color: #d65752; }
+  .swatch.red {
+    background-color: #e66465; }
+  .swatch.red-light {
+    background-color: #ffe7e8; }
+  .swatch.red-dark {
+    background-color: #b65456; }
+  .swatch.red-vdark {
+    background-color: #5d3739; }
+  .swatch.orange {
+    background-color: #f69d3c; }
+  .swatch.orange-light {
+    background-color: #ffe8d4; }
+  .swatch.orange-dark {
+    background-color: #b27229; }
+  .swatch.orange-vdark {
+    background-color: #332206; }
+  .swatch.yellow {
+    background-color: #f6b73c; }
+  .swatch.yellow-light {
+    background-color: #fff3d4; }
+  .swatch.yellow-dark {
+    background-color: #b28529; }
+  .swatch.yellow-vdark {
+    background-color: #332807; }
+  .swatch.brand-green {
+    background-color: #4d9f0c; }
+  .swatch.green {
+    background-color: #4d9f0c; }
+  .swatch.green-light {
+    background-color: #ebf8e1; }
+  .swatch.green-dark {
+    background-color: #3a7408; }
+  .swatch.green-vdark {
+    background-color: #162300; }
+  .swatch.brand-grey {
+    background-color: #aeb7c2; }
+  .swatch.grey {
+    background-color: #696969; }
+  .swatch.grey-light {
+    background-color: #eee; }
+  .swatch.grey-dark {
+    background-color: #4c4c4c; }
+  .swatch.grey-vdark {
+    background-color: #151515; }
+  .swatch.blue-grey {
+    background-color: #dce3e5; }
+  .swatch.light-blue-grey {
+    background-color: #a1b4ce; }
+  .swatch.light-grey {
+    background-color: #fdfdfd; }
+  .swatch.link-color {
+    background-color: #3d7e9a; }
+  .swatch.payment-faq-base-color {
+    background-color: #3143e2; }
+  .swatch.text-color {
+    background-color: #333; }
+  .swatch.text-light {
+    background-color: #fff; }
+  .swatch.text-dark {
+    background-dark: #333; }
+  .swatch.user-head-secondary-text-color {
+    background-dark: #a19f93; }
+  .swatch.menu-link-color {
+    background-color: #333; }
+  .swatch.border-color {
+    background-color: #585858; }
+  .swatch.light-border-color {
+    background-color: #cdcdcd; }
+  .swatch.warning-border-color {
+    background-color: #ffc543; }
+  .swatch.warning-background-color {
+    background-color: #ffe2a1; }
+  .swatch.warning {
+    background-color: #f6b73c; }
+  .swatch.negative {
+    background-color: #e66465; }
+  .swatch.error {
+    background-color: #900; }
+  .swatch.positive {
+    background-color: #4d9f0c; }
+  .swatch.neutral {
+    background-color: #3d7e9a; }
+  .swatch.default {
+    background-color: #696969; }
+  .swatch.accent-light {
+    background-color: #83d0f2; }
+  .swatch.accent-dark {
+    background-color: #216684; }
+  .swatch.blue-background-text-color {
+    background-color: #fff; }
+  .swatch.light-background-color {
+    background-color: #eee; }
+  .swatch.bg-dark {
+    background-color: #222; }
+  .swatch.bg-good {
+    background-color: #f6faf3; }
+  .swatch.bg-bad {
+    background-color: #fef7f7; }
+  .swatch.header-background-color {
+    background-color: #eee; }
+  .swatch.code-block-background-color {
+    background-color: #eee; }
+  .swatch.code-block-background-alt-color {
+    background-color: #e4f0f5; }
+  .swatch.toc-background-color {
+    background-color: #fcfcfc; }
+  .swatch.main-nav-box-shadow-color {
+    background-color: rgba(12, 12, 13, 0.1); }
+  .swatch.main-menu-item-background-color {
+    background-color: #3d7e9a; }
+  .swatch.code-block-border-color {
+    background-color: #3d7e9a; }
+  .swatch.toc-border-color {
+    background-color: #dce3e5; }
+  .swatch.box-border-hover-color {
+    background-color: #25a; }
+  .swatch.tag-border-color {
+    background-color: #cee9f9; }
+  .swatch.main-menu-border-color {
+    background-color: #d8dfe2; }
+  .swatch.toc-gradient-start-color {
+    background-color: #206584; }
+  .swatch.toc-gradient-end-color {
+    background-color: #83d0f2; }
+  .swatch.payment-background-gradient {
+    background-image: linear-gradient(to right, #83cff3, #ebf8e1); }
+  .swatch.table-blue {
+    background-color: #d4dde4; }
+  .swatch.form-border-color {
+    background-color: #9b9b9b; }
+  .swatch.placeholder-text {
+    background-color: #a0a0a0; }
+  .swatch.cta-deep-blue {
+    background-color: #161e65; }
+  .swatch.bc-colors-yes {
+    background-color: #e4f8e1; }
+  .swatch.bc-colors-no {
+    background-color: #f8e1e1; }
+  .swatch.bc-colors-partial {
+    background-color: #fff3d4; }
+  .swatch.bc-colors-unknown {
+    background-color: #eee; }

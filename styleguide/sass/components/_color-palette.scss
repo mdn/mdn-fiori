@@ -1,0 +1,372 @@
+@import "../../../node_modules/mdn-minimalist/sass/vars/color-palette";
+
+.color-palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    flex-basis: 20%;
+  }
+}
+
+.swatch {
+  border: 5px solid #eee;
+  width: 150px;
+  height: 150px;
+
+  &.brand-primary {
+    background-color: $brand-primary;
+  }
+
+  &.blue {
+    background-color: $blue;
+  }
+
+  &.blue-light {
+    background-color: $blue-light;
+  }
+
+  &.blue-dark {
+    background-color: $blue-dark;
+  }
+
+  &.blue-vdark {
+    background-color: $blue-vdark;
+  }
+
+  &.brand-primary-200 {
+    background-color: $brand-primary-200;
+  }
+
+  &.brand-primary-300 {
+    background-color: $brand-primary-300;
+  }
+
+  &.brand-primary-500 {
+    background-color: $brand-primary-500;
+  }
+
+  &.brand-primary-600 {
+    background-color: $brand-primary-600;
+  }
+
+  &.purple {
+    background-color: $purple;
+  }
+
+  &.purple-light {
+    background-color: $purple-light;
+  }
+
+  &.purple-dark {
+    background-color: $purple-dark;
+  }
+
+  &.purple-vdark {
+    background-color: $purple-vdark;
+  }
+
+  &.brand-red {
+    background-color: $brand-red;
+  }
+
+  &.red {
+    background-color: $red;
+  }
+
+  &.red-light {
+    background-color: $red-light;
+  }
+
+  &.red-dark {
+    background-color: $red-dark;
+  }
+
+  &.red-vdark {
+    background-color: $red-vdark;
+  }
+
+  &.orange {
+    background-color: $orange;
+  }
+
+  &.orange-light {
+    background-color: $orange-light;
+  }
+
+  &.orange-dark {
+    background-color: $orange-dark;
+  }
+
+  &.orange-vdark {
+    background-color: $orange-vdark;
+  }
+
+  &.yellow {
+    background-color: $yellow;
+  }
+
+  &.yellow-light {
+    background-color: $yellow-light;
+  }
+
+  &.yellow-dark {
+    background-color: $yellow-dark;
+  }
+
+  &.yellow-vdark {
+    background-color: $yellow-vdark;
+  }
+
+  &.brand-green {
+    background-color: $brand-green;
+  }
+
+  &.green {
+    background-color: $green;
+  }
+
+  &.green-light {
+    background-color: $green-light;
+  }
+
+  &.green-dark {
+    background-color: $green-dark;
+  }
+
+  &.green-vdark {
+    background-color: $green-vdark;
+  }
+
+  &.brand-grey {
+    background-color: $brand-grey;
+  }
+
+  &.grey {
+    background-color: $grey;
+  }
+
+  &.grey-light {
+    background-color: $grey-light;
+  }
+
+  &.grey-dark {
+    background-color: $grey-dark;
+  }
+
+  &.grey-vdark {
+    background-color: $grey-vdark;
+  }
+
+  &.blue-grey {
+    background-color: $blue-grey;
+  }
+
+  &.light-blue-grey {
+    background-color: $light-blue-grey;
+  }
+
+  &.light-grey {
+    background-color: $light-grey;
+  }
+
+  &.link-color {
+    background-color: $link-color;
+  }
+
+  &.payment-faq-base-color {
+    background-color: $payment-faq-base-color;
+  }
+
+  /* Typography */
+  &.text-color {
+    background-color: $text-color;
+  }
+
+  &.text-light {
+    background-color: $text-light;
+  }
+
+  &.text-dark {
+    background-dark: $text-color;
+  }
+
+  &.user-head-secondary-text-color {
+    background-dark: $user-head-secondary-text-color;
+  }
+
+  &.menu-link-color {
+    background-color: $menu-link-color;
+  }
+
+  &.border-color {
+    background-color: $border-color;
+  }
+
+  &.light-border-color {
+    background-color: $light-border-color;
+  }
+
+  &.warning-border-color {
+    background-color: $warning-border-color;
+  }
+
+  &.warning-background-color {
+    background-color: $warning-background-color;
+  }
+
+  &.warning {
+    background-color: $warning;
+  }
+
+  &.negative {
+    background-color: $negative;
+  }
+
+  &.error {
+    background-color: $error;
+  }
+
+  &.positive {
+    background-color: $positive;
+  }
+
+  &.neutral {
+    background-color: $neutral;
+  }
+
+  &.default {
+    background-color: $default;
+  }
+
+  &.accent-light {
+    background-color: $accent-light;
+  }
+
+  &.accent-dark {
+    background-color: $accent-dark;
+  }
+
+  /* Backgrounds */
+  &.blue-background-text-color {
+    background-color: $blue-background-text-color;
+  }
+
+  &.light-background-color {
+    background-color: $light-background-color;
+  }
+
+  &.bg-dark {
+    background-color: $bg-dark;
+  }
+
+  &.bg-good {
+    background-color: $bg-good;
+  }
+
+  &.bg-bad {
+    background-color: $bg-bad;
+  }
+
+  &.header-background-color {
+    background-color: $header-background-color;
+  }
+
+  &.code-block-background-color {
+    background-color: $code-block-background-color;
+  }
+
+  &.code-block-background-alt-color {
+    background-color: $code-block-background-alt-color;
+  }
+
+  &.toc-background-color {
+    background-color: $toc-background-color;
+  }
+
+  &.main-nav-box-shadow-color {
+    background-color: $main-nav-box-shadow-color;
+  }
+
+  &.main-menu-item-background-color {
+    background-color: $main-menu-item-background-color;
+  }
+
+  /* Borders */
+  &.code-block-border-color {
+    background-color: $code-block-border-color;
+  }
+
+  &.toc-border-color {
+    background-color: $toc-border-color;
+  }
+
+  &.box-border-hover-color {
+    background-color: $box-border-hover-color;
+  }
+
+  &.tag-border-color {
+    background-color: $tag-border-color;
+  }
+
+  &.main-menu-border-color {
+    background-color: $main-menu-border-color;
+  }
+
+  /* Gradients */
+  &.toc-gradient-start-color {
+    background-color: $toc-gradient-start-color;
+  }
+
+  &.toc-gradient-end-color {
+    background-color: $toc-gradient-end-color;
+  }
+
+  &.payment-background-gradient {
+    background-image: $payment-background-gradient;
+  }
+
+  /* Tables */
+  &.table-blue {
+    background-color: $table-blue;
+  }
+
+  /* Forms */
+  &.form-border-color {
+    background-color: $form-border-color;
+  }
+
+  &.placeholder-text {
+    background-color: $placeholder-text;
+  }
+
+  /* Buttons */
+  &.cta-deep-blue {
+    background-color: $cta-deep-blue;
+  }
+
+  /* BCD */
+  &.bc-colors-yes {
+    background-color: map-get($bc-colors, "yes");
+  }
+
+  &.bc-colors-no {
+    background-color: map-get($bc-colors, "no");
+  }
+
+  &.bc-colors-partial {
+    background-color: map-get($bc-colors, "partial");
+  }
+
+  &.bc-colors-unknown {
+    background-color: map-get($bc-colors, "unknown");
+  }
+}
