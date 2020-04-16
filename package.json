@@ -8,7 +8,7 @@
     "build:sass:styleguide": "node-sass-chokidar ./styleguide/sass/ -o ./styleguide/css/styleguide -w",
     "build:sass:prod": "node-sass-chokidar ./node_modules/mdn-minimalist/sass/ -o ./styleguide/css",
     "build:sass:styleguide:prod": "node-sass-chokidar ./styleguide/sass/ -o ./styleguide/css/styleguide",
-    "build:production": "run-p build:sass:prod build:sass:styleguide:prod build",
+    "build:production": "run-s build:sass:prod build:sass:styleguide:prod build",
     "serve": "npx @11ty/eleventy  --input=styleguide --output=docs --serve",
     "start": "run-p build:sass build:sass:styleguide serve"
   },
