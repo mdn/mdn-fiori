@@ -1,3 +1,5 @@
+/* should be defined in `atoms/_borders.scss` */
+/* should be defined in `atoms/....scss` - TBD */
 /* MDN SCHEME
 kuma/static/styles/includes/_vars.scss
 --------------------------------------------------
@@ -253,3 +255,6 @@ kuma/static/styles/components/structure/page-header/_vars_nav.scss
     background-color: #fff3d4; }
   .swatch.bc-colors-unknown {
     background-color: #eee; }
+
+.size {
+  font-size: 1rem; }
