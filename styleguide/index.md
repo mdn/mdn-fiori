@@ -7,3 +7,4 @@ title: Welcome to the MDN Web Docs Styleguide
 
 - [SCSS and CSS Authoring Guidelines](sass-css-authoring-guidelines/)
 - [Color Palette](color-palette/)
+- [Typescale](typescale/)
