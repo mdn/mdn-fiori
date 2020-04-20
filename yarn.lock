@@ -2751,10 +2751,10 @@ maximatch@^0.1.0:
     arrify "^1.0.0"
     minimatch "^3.0.0"
 
-mdn-minimalist@^0.0.14:
-  version "0.0.14"
-  resolved "https://registry.yarnpkg.com/mdn-minimalist/-/mdn-minimalist-0.0.14.tgz#4b5fb48b5c7959cd0dd66294c413187f8fd4d2b2"
-  integrity sha512-9+WEz0j35PtweFl+iOZIuJOCd8n8xjAEI3gtEapLpeP6zUxcUxgZ0jMX23bdMj49uFDRzP/NQgYF2hFbCisYbQ==
+mdn-minimalist@^0.0.16:
+  version "0.0.16"
+  resolved "https://registry.yarnpkg.com/mdn-minimalist/-/mdn-minimalist-0.0.16.tgz#6870e49775a2ad60a8a1e288232da52a44fed6a2"
+  integrity sha512-mmfuwmtk0b91wucwl2e0JsFfOvWBbMUObQnQ9UgI2mrv/BFM3tp5x8ANe/klciyO0p+4cl6CgTNO+34xm3RRJQ==
 
 mdurl@^1.0.1:
   version "1.0.1"
