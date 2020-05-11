@@ -3,11 +3,10 @@
   "version": "0.1.0",
   "description": "MDN Web Docs Style Guide",
   "scripts": {
-    "copy:sass": "cp -R ./node_modules/mdn-minimalist/sass/ ./sass",
     "copy:typography": "cp -R ./node_modules/mdn-minimalist/typography/ ./typography",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "start": "npm-run-all copy:sass copy:typography storybook"
+    "start": "npm-run-all copy:typography storybook"
   },
   "repository": {
     "type": "git",
