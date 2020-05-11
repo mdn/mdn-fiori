@@ -1,5 +1,3 @@
-import "../../sass/atoms/_buttons.scss";
-
 export default { title: "Atoms|Buttons" };
 
 export const Primary = () => `<button class="cta primary">Click me</button>`;

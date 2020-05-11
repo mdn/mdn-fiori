@@ -1,4 +1,5 @@
 const path = require("path");
+const HardSourceWebpackPlugin = require("hard-source-webpack-plugin");
 
 module.exports = {
   stories: ["../stories/**/*.stories.js"],
@@ -8,21 +9,20 @@ module.exports = {
     "@storybook/addon-knobs",
     "@storybook/addon-essentials",
     "@storybook/addon-links",
-    "@storybook/addon-storysource",
+    "@storybook/addon-storysource"
   ],
   webpackFinal: async (config, { configType }) => {
-    // Add global styles to the iFrame
-    // config.entry.push(
-    //   path.resolve(__dirname, "..", "sass", "mdn-minimalist.scss")
-    // );
-
     // Allows us to import SCSS files in stories
     config.module.rules.push({
       test: /\.scss$/,
       use: ["style-loader", "css-loader", "sass-loader"],
-      include: [path.resolve(__dirname), path.resolve(__dirname, "..", "sass")],
+      include: [path.resolve(__dirname), path.resolve(__dirname, "..", "sass")]
     });
 
+    // Adds https://github.com/mzgoddard/hard-source-webpack-plugin
+    // for faster builds
+    config.plugins.push(new HardSourceWebpackPlugin());
+
     return config;
-  },
+  }
 };

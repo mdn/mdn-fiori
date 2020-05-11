@@ -1,5 +1,3 @@
-import "../../sass/components/breadcrumbs.scss";
-
 export default {
   title: "Components|Breadcrumbs"
 };
