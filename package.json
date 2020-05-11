@@ -3,15 +3,10 @@
   "version": "0.1.0",
   "description": "MDN Web Docs Style Guide",
   "scripts": {
-    "build": "npx @11ty/eleventy --pathprefix=mdn-fiori --input=styleguide --output=docs",
-    "build:sass": "node-sass-chokidar ./node_modules/mdn-minimalist/sass/ -o ./styleguide/css -w",
-    "build:sass:styleguide": "node-sass-chokidar ./styleguide/sass/ -o ./styleguide/css/styleguide -w",
-    "build:sass:prod": "node-sass-chokidar ./node_modules/mdn-minimalist/sass/ -o ./styleguide/css",
-    "build:sass:styleguide:prod": "node-sass-chokidar ./styleguide/sass/ -o ./styleguide/css/styleguide",
-    "build:production": "run-s copy:typography build:sass:prod build:sass:styleguide:prod build",
-    "copy:typography": "cp -R ./node_modules/mdn-minimalist/typography/ ./styleguide/typography/",
-    "serve": "npx @11ty/eleventy  --input=styleguide --output=docs --serve",
-    "start": "run-p copy:typography build:sass build:sass:styleguide serve"
+    "copy:typography": "cp -R ./node_modules/mdn-minimalist/typography/ ./typography",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "start": "npm-run-all copy:typography storybook"
   },
   "repository": {
     "type": "git",
@@ -24,13 +19,24 @@
   },
   "homepage": "https://github.com/mdn/mdn-fiori/#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.10.0",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
+    "@babel/core": "^7.9.6",
+    "@storybook/addon-a11y": "^5.3.18",
+    "@storybook/addon-docs": "^5.3.18",
+    "@storybook/addon-essentials": "^5.3.18",
+    "@storybook/addon-knobs": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addon-storysource": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/html": "^5.3.18",
+    "@storybook/source-loader": "^5.3.18",
+    "babel-loader": "^8.1.0",
     "cz-conventional-changelog": "3.2.0",
+    "hard-source-webpack-plugin": "^0.13.1",
     "husky": "^4.2.5",
     "mdn-minimalist": "^0.1.3",
     "node-sass-chokidar": "^1.4.0",
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "sass-loader": "^8.0.2"
   },
   "config": {
     "commitizen": {

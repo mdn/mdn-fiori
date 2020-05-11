@@ -57,5 +57,6 @@ typings/
 # dotenv environment variables file
 .env
 
-# ignore docs folder
-docs
+# ignore minimalist src in root
+sass
+typography
