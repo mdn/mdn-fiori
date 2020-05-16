@@ -2,8 +2,6 @@ import { addParameters, configure } from "@storybook/react";
 import { DocsPage, DocsContainer } from "@storybook/addon-docs/blocks";
 import "./preview.scss";
 
-const SOURCE_REGEX = /^\(\) => [`'"](.*)['`"]$/;
-
 addParameters({
   a11y: {
     config: {},
@@ -22,7 +20,7 @@ const loadStories = () => {
     // load Docs first
     require.context("../docs", true, /intro.stories.mdx/),
     require.context("../docs", true, /\.stories\.(js|jsx|ts|tsx|mdx)$/),
-    require.context("../stories", true, /\.stories\.(js|jsx|ts|tsx|mdx)$/)
+    require.context("../src", true, /\.stories\.(js|jsx|ts|tsx|mdx)$/)
   ];
 };
 
