@@ -1,10 +1,9 @@
-// import { withLinks } from '@storybook/addon-links';
+// // import { withLinks } from '@storybook/addon-links';
 
-import reference from "./reference.html";
+// import reference from "./reference.html";
 
-export default {
-  title: "Pages|Reference",
-  //   decorators: [withLinks],
-};
+// export default {
+//   title: "Pages|Reference"
+// };
 
-export const Reference = () => reference;
+// export const Reference = () => reference;

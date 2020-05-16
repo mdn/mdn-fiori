@@ -2,7 +2,7 @@ const path = require("path");
 const HardSourceWebpackPlugin = require("hard-source-webpack-plugin");
 
 module.exports = {
-  stories: ["../stories/**/*.stories.js"],
+  // stories: ["../stories/**/*.stories.js"],
   addons: [
     "@storybook/addon-docs",
     "@storybook/addon-a11y",
