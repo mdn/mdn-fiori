@@ -10,9 +10,8 @@ export default {
 export const standard = () => (
   <>
     <button>Primary button</button>
-    <button className="danger">Danger button</button>
     <button className="positive">Positive button</button>
-    <button className="negative">Negative button</button>
+    <button className="danger">Danger button</button>
     <button className="inactive">Inactive button</button>
     <button className="icon">
       {icon} With icon
@@ -26,14 +25,13 @@ export const standard = () => (
 export const outline = () => (
   <>
     <button className="outline">Outline button</button>
-    <button className="danger outline">Danger outline button</button>
     <button className="positive outline">Positive outline button</button>
-    <button className="negative outline">Negative outline button</button>
+    <button className="danger outline">Danger outline button</button>
     <button className="inactive outline">Inactive outline button</button>
-    <button className="icon outline">
+    <button className="icon outline positive">
         {icon} With icon
     </button>
-    <button className="icon right outline negative">
+    <button className="icon right outline">
         With icon on the right {icon}
     </button>
   </>
