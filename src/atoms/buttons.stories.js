@@ -1,4 +1,5 @@
 import React from "react";
+
 const icon = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -11,30 +12,24 @@ const icon = (
   </svg>
 );
 
+const allButtonsStyle = {
+  display: "flex",
+  flexWrap: "wrap"
+};
+
 export default {
   title: "Atoms|Buttons"
 };
 
-export const standard = () => (
-  <>
+export const allButtons = () => (
+  <div style={allButtonsStyle}>
     <button>Primary button</button>
     <button className="positive">Positive button</button>
     <button className="danger">Danger button</button>
     <button className="inactive">Inactive button</button>
-  </>
-);
-
-export const outline = () => (
-  <>
     <button className="outline">Outline button</button>
     <button className="positive outline">Positive outline button</button>
     <button className="danger outline">Danger outline button</button>
-    <button className="inactive outline">Inactive outline button</button>
-  </>
-);
-
-export const withIcons = () => (
-  <>
     <button className="icon danger">{icon} With icon</button>
     <button className="icon outline positive">{icon} With icon</button>
     <button className="icon right positive">
@@ -43,14 +38,56 @@ export const withIcons = () => (
     <button className="icon right outline">
       With icon on the right {icon}
     </button>
+  </div>
+);
+
+export const primary = () => (
+  <>
+    <button>Primary button</button>
+    <button className="outline">Primary outline button</button>
   </>
 );
 
-export const notButtons = () => (
+export const positive = () => (
   <>
-    <a href="#" className="button">
-      I am a link but look like a button
-    </a>
-    <input className="button" type="submit" value="I am really an input" />
+    <button className="positive">Positive button</button>
+    <button className="positive outline">Positive outline button</button>
   </>
+);
+
+export const danger = () => (
+  <>
+    <button className="danger">Danger button</button>
+    <button className="danger outline">Danger outline button</button>
+  </>
+);
+
+export const inactive = () => (
+  <button className="inactive">Inactive button</button>
+);
+
+export const withIconsOnLeft = () => (
+  <>
+    <button className="icon">{icon} With icon</button>
+    <button className="icon outline">{icon} With icon</button>
+  </>
+);
+
+export const withIconsOnRight = () => (
+  <>
+    <button className="icon right">With icon on the right {icon}</button>
+    <button className="icon right outline">
+      With icon on the right {icon}
+    </button>
+  </>
+);
+
+export const link = () => (
+  <a href="#" className="button">
+    I am a link but look like a button
+  </a>
+);
+
+export const input = () => (
+  <input className="button" type="submit" value="I am really an input" />
 );
