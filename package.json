@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/mdn/mdn-fiori/#readme",
   "devDependencies": {
-    "@babel/core": "^7.9.6",
+    "@babel/core": "^7.10.2",
     "@storybook/addon-a11y": "^5.3.19",
     "@storybook/addon-docs": "^5.3.19",
     "@storybook/addon-essentials": "^5.3.19",
