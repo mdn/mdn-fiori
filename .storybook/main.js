@@ -68,6 +68,6 @@ module.exports = {
     // for faster builds
     config.plugins.push(new HardSourceWebpackPlugin());
 
-    return console.dir(config, { depth: null }) || config;
+    return config;
   }
 };
