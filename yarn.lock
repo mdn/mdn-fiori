@@ -6898,10 +6898,10 @@ mdn-data@2.0.6:
   resolved "https://registry.yarnpkg.com/mdn-data/-/mdn-data-2.0.6.tgz#852dc60fcaa5daa2e8cf6c9189c440ed3e042978"
   integrity sha512-rQvjv71olwNHgiTbfPZFkJtjNMciWgswYeciZhtvWLO8bmX3TnhyA62I6sTWOyZssWHJJjY6/KiWwqQsWWsqOA==
 
-mdn-minimalist@^0.1.21:
-  version "0.1.21"
-  resolved "https://registry.yarnpkg.com/mdn-minimalist/-/mdn-minimalist-0.1.21.tgz#be9e8f59ab2b905bb2d62d39000aa765d89ec08a"
-  integrity sha512-V9h09pVXdp6g28BZWWRu4DYcmpFDqEtNgEJe2WK5Xb9PGxifWN3YytkubT2FcQq8WPVWPIuwl0SrQHFJ/VY7CQ==
+mdn-minimalist@^0.1.24:
+  version "0.1.24"
+  resolved "https://registry.yarnpkg.com/mdn-minimalist/-/mdn-minimalist-0.1.24.tgz#323e1940978e63214e0e68b70911d5c820a65b42"
+  integrity sha512-j5T9GTbq/dYgoAA9flaLwscLQygf2FbBGJuQw/sozP65nwfH63xm0Uri5Ct11BPHP51QJom6Sg98H+0NygjYdw==
 
 mdurl@^1.0.0:
   version "1.0.1"
