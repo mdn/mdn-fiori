@@ -1,5 +1,8 @@
 import { addParameters, configure } from "@storybook/react";
 import { DocsPage, DocsContainer } from "@storybook/addon-docs/blocks";
+
+import mdnTheme from "./mdnTheme";
+
 import "./preview.scss";
 
 addParameters({
@@ -12,6 +15,9 @@ addParameters({
   docs: {
     container: DocsContainer,
     page: DocsPage
+  },
+  options: {
+    theme: mdnTheme
   }
 });
 

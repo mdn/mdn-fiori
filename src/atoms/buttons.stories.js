@@ -14,7 +14,8 @@ const icon = (
 
 const allButtonsStyle = {
   display: "flex",
-  flexWrap: "wrap"
+  flexWrap: "wrap",
+  gap: "20px"
 };
 
 export default {
@@ -41,25 +42,27 @@ export const allButtons = () => (
   </div>
 );
 
-export const primary = () => (
-  <>
-    <button>Primary button</button>
-    <button className="outline">Primary outline button</button>
-  </>
-);
+export const primary = () => {
+  return (
+    <div style={allButtonsStyle}>
+      <button>Primary button</button>
+      <button className="outline">Primary outline button</button>
+    </div>
+  );
+};
 
 export const positive = () => (
-  <>
+  <div style={allButtonsStyle}>
     <button className="positive">Positive button</button>
     <button className="positive outline">Positive outline button</button>
-  </>
+  </div>
 );
 
 export const danger = () => (
-  <>
+  <div style={allButtonsStyle}>
     <button className="danger">Danger button</button>
     <button className="danger outline">Danger outline button</button>
-  </>
+  </div>
 );
 
 export const inactive = () => (
@@ -67,19 +70,19 @@ export const inactive = () => (
 );
 
 export const withIconsOnLeft = () => (
-  <>
+  <div style={allButtonsStyle}>
     <button className="icon">{icon} With icon</button>
     <button className="icon outline">{icon} With icon</button>
-  </>
+  </div>
 );
 
 export const withIconsOnRight = () => (
-  <>
+  <div style={allButtonsStyle}>
     <button className="icon right">With icon on the right {icon}</button>
     <button className="icon right outline">
       With icon on the right {icon}
     </button>
-  </>
+  </div>
 );
 
 export const link = () => (

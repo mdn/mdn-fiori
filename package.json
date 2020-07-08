@@ -4,7 +4,7 @@
   "description": "MDN Web Docs Style Guide",
   "scripts": {
     "copy:typography": "cp -R ./node_modules/mdn-minimalist/typography/ ./typography",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -s node_modules/mdn-minimalist -p 6006",
     "build-storybook": "build-storybook",
     "start": "npm-run-all copy:typography storybook"
   },
@@ -30,6 +30,7 @@
     "@storybook/addons": "^5.3.18",
     "@storybook/react": "^5.3.19",
     "@storybook/source-loader": "^5.3.19",
+    "@storybook/theming": "^5.3.19",
     "babel-loader": "^8.1.0",
     "hard-source-webpack-plugin": "^0.13.1",
     "mdn-minimalist": "^0.1.37",
