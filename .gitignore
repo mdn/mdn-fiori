@@ -59,4 +59,5 @@ typings/
 
 # ignore minimalist src in root
 sass
+storybook-static
 typography
