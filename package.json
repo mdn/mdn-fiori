@@ -5,7 +5,7 @@
   "scripts": {
     "copy:typography": "cp -R ./node_modules/mdn-minimalist/typography/ ./typography",
     "storybook": "start-storybook -s node_modules/mdn-minimalist -p 6006",
-    "build-storybook": "build-storybook -s node_modules/mdn-minimalist",
+    "build-storybook": "build-storybook -s ./node_modules/mdn-minimalist",
     "start": "npm-run-all copy:typography storybook"
   },
   "repository": {
