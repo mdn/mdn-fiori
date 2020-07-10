@@ -38,7 +38,7 @@
     "babel-loader": "^8.1.0",
     "hard-source-webpack-plugin": "^0.13.1",
     "klaw-sync": "^6.0.0",
-    "mdn-minimalist": "^0.1.37",
+    "mdn-minimalist": "^0.1.38",
     "node-sass-chokidar": "^1.5.0",
     "npm-run-all": "^4.1.5",
     "react-svg-loader": "^3.0.3",
