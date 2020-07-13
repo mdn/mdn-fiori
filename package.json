@@ -50,6 +50,6 @@
     }
   },
   "dependencies": {
-    "mdn-minimalist": "^0.1.38"
+    "mdn-minimalist": "^0.1.39"
   }
 }
