@@ -25,18 +25,18 @@ export default {
 export const allButtons = () => (
   <div style={allButtonsStyle}>
     <button>Primary button</button>
-    <button className="positive">Positive button</button>
-    <button className="danger">Danger button</button>
-    <button className="inactive">Inactive button</button>
-    <button className="outline">Outline button</button>
-    <button className="positive outline">Positive outline button</button>
-    <button className="danger outline">Danger outline button</button>
-    <button className="icon danger">{icon} With icon</button>
-    <button className="icon outline positive">{icon} With icon</button>
-    <button className="icon right positive">
+    <button className="button positive">Positive button</button>
+    <button className="button danger">Danger button</button>
+    <button className="button inactive">Inactive button</button>
+    <button className="button outline">Outline button</button>
+    <button className="button positive outline">Positive outline button</button>
+    <button className="button danger outline">Danger outline button</button>
+    <button className="button icon danger">{icon} With icon</button>
+    <button className="button icon outline positive">{icon} With icon</button>
+    <button className="button icon right positive">
       With icon on the right {icon}
     </button>
-    <button className="icon right outline">
+    <button className="button icon right outline">
       With icon on the right {icon}
     </button>
   </div>
@@ -45,48 +45,48 @@ export const allButtons = () => (
 export const primary = () => {
   return (
     <div style={allButtonsStyle}>
-      <button>Primary button</button>
-      <button className="outline">Primary outline button</button>
+      <button className="button">Primary button</button>
+      <button className="button outline">Primary outline button</button>
     </div>
   );
 };
 
 export const positive = () => (
   <div style={allButtonsStyle}>
-    <button className="positive">Positive button</button>
-    <button className="positive outline">Positive outline button</button>
+    <button className="button positive">Positive button</button>
+    <button className="button positive outline">Positive outline button</button>
   </div>
 );
 
 export const danger = () => (
   <div style={allButtonsStyle}>
-    <button className="danger">Danger button</button>
-    <button className="danger outline">Danger outline button</button>
+    <button className="button danger">Danger button</button>
+    <button className="button danger outline">Danger outline button</button>
   </div>
 );
 
 export const inactive = () => (
-  <button className="inactive">Inactive button</button>
+  <button className="button inactive">Inactive button</button>
 );
 
 export const withIconsOnLeft = () => (
   <div style={allButtonsStyle}>
-    <button className="icon">{icon} With icon</button>
-    <button className="icon outline">{icon} With icon</button>
+    <button className="button icon">{icon} With icon</button>
+    <button className="button icon outline">{icon} With icon</button>
   </div>
 );
 
 export const withIconsOnRight = () => (
   <div style={allButtonsStyle}>
-    <button className="icon right">With icon on the right {icon}</button>
-    <button className="icon right outline">
+    <button className="button icon right">With icon on the right {icon}</button>
+    <button className="button icon right outline">
       With icon on the right {icon}
     </button>
   </div>
 );
 
 export const link = () => (
-  <a href="#" className="button">
+  <a href="/" className="button">
     I am a link but look like a button
   </a>
 );

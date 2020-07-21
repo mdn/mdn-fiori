@@ -1,23 +1,12 @@
 import { addParameters, configure } from "@storybook/react";
 import { DocsPage, DocsContainer } from "@storybook/addon-docs/blocks";
 
-import mdnTheme from "./mdnTheme";
-
 import "./preview.scss";
 
 addParameters({
-  a11y: {
-    config: {},
-    options: {
-      restoreScroll: true
-    }
-  },
   docs: {
     container: DocsContainer,
     page: DocsPage
-  },
-  options: {
-    theme: mdnTheme
   }
 });
 

@@ -1,14 +1,10 @@
 const path = require("path");
-const HardSourceWebpackPlugin = require("hard-source-webpack-plugin");
 
 module.exports = {
   addons: [
-    "@storybook/addon-actions",
-    "@storybook/addon-a11y",
-    "@storybook/addon-knobs",
-    "@storybook/addon-essentials",
-    "@storybook/addon-links",
-    "@storybook/addon-storysource",
+    "@storybook/addon-viewport",
+    "@storybook/addon-a11y/register",
+    "@storybook/addon-knobs/register",
     {
       name: "@storybook/addon-docs",
       options: {
@@ -38,34 +34,25 @@ module.exports = {
       {
         test: /\.scss$/,
         use: ["style-loader", "css-loader", "sass-loader"],
-        include: [
-          path.resolve(__dirname),
-          path.resolve(__dirname, "..", "sass")
-        ]
+        include: [path.resolve(__dirname), path.resolve(__dirname, "..", "src")]
       },
+      // use svgr for SVG in JSX
       {
-        test: /\.svg$/,
-        use: [
-          {
-            loader: "babel-loader"
-          },
-          {
-            loader: "react-svg-loader",
-            options: {
-              svgo: {
-                // Disable this one svgo plugin because it
-                // strips the role attribute from our svgs
-                plugins: [{ removeUnknownsAndDefaults: false }]
-              }
-            }
-          }
-        ]
+        test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+        issuer: {
+          test: /\.jsx?$/
+        },
+        use: ["@svgr/webpack"]
+      },
+      // use url-loader for SVG in SASS
+      {
+        test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+        issuer: {
+          test: /\.scss?$/
+        },
+        use: ["file-loader"]
       }
     );
-
-    // Adds https://github.com/mzgoddard/hard-source-webpack-plugin
-    // for faster builds
-    config.plugins.push(new HardSourceWebpackPlugin());
 
     return config;
   }
