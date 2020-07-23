@@ -2,7 +2,7 @@
 @import "~mdn-minimalist/sass/vars/media-queries";
 @import "~mdn-minimalist/sass/vars/typography";
 
-$menu-zindex: 95;
+$menu-zindex: 500;
 $menu-box-shadow: 0 2px 8px 0 $neutral-500;
 $menu-border: solid 1px $neutral-400;
 $menu-border-radius: 4px;
@@ -41,7 +41,6 @@ ul.main-menu {
   padding: 20px;
   padding-top: 0;
   width: 100%;
-  height: 100vh;
   font-weight: bold;
   z-index: $menu-zindex;
 
