@@ -46,10 +46,12 @@ const _MainMenu = ({ documentData, locale }: Props) => {
   }
 
   function toggleMainMenu() {
+    const pageOverlay = document.querySelector(".page-overlay");
     let mainMenuButton = mainMenuToggleRef.current;
 
     if (mainMenuButton) {
       mainMenuButton.classList.toggle("expanded");
+      pageOverlay.classList.toggle("hidden");
       setShowMainMenu(!showMainMenu);
     }
   }

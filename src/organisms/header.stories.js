@@ -8,4 +8,9 @@ export default {
   decorators: [withA11y]
 };
 
-export const header = () => <Header />;
+export const header = () => (
+  <>
+    <Header />
+    <div className="page-overlay hidden"></div>
+  </>
+);
