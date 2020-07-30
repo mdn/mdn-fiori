@@ -1,7 +1,7 @@
 import React from "react";
 
-import Instagram from "../../node_modules/mdn-minimalist/dinocons/social/instagram.svg";
-import Twitter from "../../node_modules/mdn-minimalist/dinocons/social/twitter.svg";
+import Instagram from "../../dinocons/social/instagram.svg";
+import Twitter from "../../dinocons/social/twitter.svg";
 
 export default {
   title: "Atoms|Dinocons|Social"

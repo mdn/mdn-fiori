@@ -1,9 +1,9 @@
 import React from "react";
 
-import Frown from "../../node_modules/mdn-minimalist/dinocons/emojis/frown.svg";
-import Smiley from "../../node_modules/mdn-minimalist/dinocons/emojis/smiley.svg";
-import ThumbsDown from "../../node_modules/mdn-minimalist/dinocons/emojis/thumbs-down.svg";
-import ThumbsUp from "../../node_modules/mdn-minimalist/dinocons/emojis/thumbs-up.svg";
+import Frown from "../../dinocons/emojis/frown.svg";
+import Smiley from "../../dinocons/emojis/smiley.svg";
+import ThumbsDown from "../../dinocons/emojis/thumbs-down.svg";
+import ThumbsUp from "../../dinocons/emojis/thumbs-up.svg";
 
 export default {
   title: "Atoms|Dinocons|Emoji"

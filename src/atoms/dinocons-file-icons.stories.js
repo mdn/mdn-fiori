@@ -1,7 +1,7 @@
 import React from "react";
 
-import File from "../../node_modules/mdn-minimalist/dinocons/file-icons/file.svg";
-import PlainText from "../../node_modules/mdn-minimalist/dinocons/file-icons/plain-text.svg";
+import File from "../../dinocons/file-icons/file.svg";
+import PlainText from "../../dinocons/file-icons/plain-text.svg";
 
 export default {
   title: "Atoms|Dinocons|File Icons"

@@ -1,9 +1,9 @@
 import React from "react";
 
-import ExclamationCircle from "../../node_modules/mdn-minimalist/dinocons/notifications/exclamation-circle.svg";
-import ExclamationTriangle from "../../node_modules/mdn-minimalist/dinocons/notifications/exclamation-triangle.svg";
-import InfoCircle from "../../node_modules/mdn-minimalist/dinocons/notifications/info-circle.svg";
-import Question from "../../node_modules/mdn-minimalist/dinocons/notifications/question.svg";
+import ExclamationCircle from "../../dinocons/notifications/exclamation-circle.svg";
+import ExclamationTriangle from "../../dinocons/notifications/exclamation-triangle.svg";
+import InfoCircle from "../../dinocons/notifications/info-circle.svg";
+import Question from "../../dinocons/notifications/question.svg";
 
 export default {
   title: "Atoms|Dinocons|Notifications"

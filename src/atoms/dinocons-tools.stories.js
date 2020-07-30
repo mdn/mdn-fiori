@@ -1,9 +1,9 @@
 import React from "react";
 
-import Eye from "../../node_modules/mdn-minimalist/dinocons/tools/eye.svg";
-import Gear from "../../node_modules/mdn-minimalist/dinocons/tools/gear.svg";
-import Play from "../../node_modules/mdn-minimalist/dinocons/tools/play.svg";
-import Undo from "../../node_modules/mdn-minimalist/dinocons/tools/undo.svg";
+import Eye from "../../dinocons/tools/eye.svg";
+import Gear from "../../dinocons/tools/gear.svg";
+import Play from "../../dinocons/tools/play.svg";
+import Undo from "../../dinocons/tools/undo.svg";
 
 export default {
   title: "Atoms|Dinocons|Tools"

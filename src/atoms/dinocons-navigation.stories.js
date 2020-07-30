@@ -1,7 +1,7 @@
 import React from "react";
 
-import MenuClose from "../../node_modules/mdn-minimalist/dinocons/navigation/menu-close.svg";
-import MenuOpen from "../../node_modules/mdn-minimalist/dinocons/navigation/menu-open.svg";
+import MenuClose from "../../dinocons/navigation/menu-close.svg";
+import MenuOpen from "../../dinocons/navigation/menu-open.svg";
 
 export default {
   title: "Atoms|Dinocons|Navigation"

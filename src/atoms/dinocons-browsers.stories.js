@@ -1,12 +1,12 @@
 import React from "react";
 
-import Chrome from "../../node_modules/mdn-minimalist/dinocons/browsers/chrome.svg";
-import Edge from "../../node_modules/mdn-minimalist/dinocons/browsers/edge.svg";
-import Firefox from "../../node_modules/mdn-minimalist/dinocons/browsers/firefox.svg";
-import InternetExplorer from "../../node_modules/mdn-minimalist/dinocons/browsers/internet-explorer.svg";
-import Opera from "../../node_modules/mdn-minimalist/dinocons/browsers/opera.svg";
-import Safari from "../../node_modules/mdn-minimalist/dinocons/browsers/safari.svg";
-import SamsungInternet from "../../node_modules/mdn-minimalist/dinocons/browsers/samsung-internet.svg";
+import Chrome from "../../dinocons/browsers/chrome.svg";
+import Edge from "../../dinocons/browsers/edge.svg";
+import Firefox from "../../dinocons/browsers/firefox.svg";
+import InternetExplorer from "../../dinocons/browsers/internet-explorer.svg";
+import Opera from "../../dinocons/browsers/opera.svg";
+import Safari from "../../dinocons/browsers/safari.svg";
+import SamsungInternet from "../../dinocons/browsers/samsung-internet.svg";
 
 export default {
   title: "Atoms|Dinocons|Browsers"

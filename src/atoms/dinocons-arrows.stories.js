@@ -1,8 +1,8 @@
 import React from "react";
 
-import Arrow from "../../node_modules/mdn-minimalist/dinocons/arrows/arrow.svg";
-import Chevron from "../../node_modules/mdn-minimalist/dinocons/arrows/chevron.svg";
-import Triangle from "../../node_modules/mdn-minimalist/dinocons/arrows/triangle.svg";
+import Arrow from "../../dinocons/arrows/arrow.svg";
+import Chevron from "../../dinocons/arrows/chevron.svg";
+import Triangle from "../../dinocons/arrows/triangle.svg";
 
 export default {
   title: "Atoms|Dinocons|Arrows"
