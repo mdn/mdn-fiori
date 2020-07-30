@@ -1,10 +1,10 @@
 import React from "react";
 
-import Android from "../../node_modules/mdn-minimalist/dinocons/platforms/android.svg";
-import Desktop from "../../node_modules/mdn-minimalist/dinocons/platforms/desktop.svg";
-import Mobile from "../../node_modules/mdn-minimalist/dinocons/platforms/mobile.svg";
-import Nodejs from "../../node_modules/mdn-minimalist/dinocons/platforms/nodejs.svg";
-import Server from "../../node_modules/mdn-minimalist/dinocons/platforms/server.svg";
+import Android from "../../dinocons/platforms/android.svg";
+import Desktop from "../../dinocons/platforms/desktop.svg";
+import Mobile from "../../dinocons/platforms/mobile.svg";
+import Nodejs from "../../dinocons/platforms/nodejs.svg";
+import Server from "../../dinocons/platforms/server.svg";
 
 export default {
   title: "Atoms|Dinocons|Platforms"

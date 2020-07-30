@@ -1,13 +1,13 @@
 import React from "react";
 
-import Codepen from "../../node_modules/mdn-minimalist/dinocons/brands/codepen-logo.svg";
-import GitHubMarkLarge from "../../node_modules/mdn-minimalist/dinocons/brands/github-mark-large.svg";
-import GitHubMarkSmall from "../../node_modules/mdn-minimalist/dinocons/brands/github-mark-small.svg";
-import GoogleColor from "../../node_modules/mdn-minimalist/dinocons/brands/google-color.svg";
-import GoogleMono from "../../node_modules/mdn-minimalist/dinocons/brands/google-mono.svg";
-import JSFiddle from "../../node_modules/mdn-minimalist/dinocons/brands/jsfiddle.svg";
-import MDNDino from "../../node_modules/mdn-minimalist/dinocons/brands/mdn-dino.svg";
-import MDNDinoGradient from "../../node_modules/mdn-minimalist/dinocons/brands/mdn-dino-gradient.svg";
+import Codepen from "../../dinocons/brands/codepen-logo.svg";
+import GitHubMarkLarge from "../../dinocons/brands/github-mark-large.svg";
+import GitHubMarkSmall from "../../dinocons/brands/github-mark-small.svg";
+import GoogleColor from "../../dinocons/brands/google-color.svg";
+import GoogleMono from "../../dinocons/brands/google-mono.svg";
+import JSFiddle from "../../dinocons/brands/jsfiddle.svg";
+import MDNDino from "../../dinocons/brands/mdn-dino.svg";
+import MDNDinoGradient from "../../dinocons/brands/mdn-dino-gradient.svg";
 
 export default {
   title: "Atoms|Dinocons|Brands"

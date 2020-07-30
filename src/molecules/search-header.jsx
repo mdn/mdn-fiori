@@ -2,7 +2,7 @@ import * as React from "react";
 import { useEffect, useRef } from "react";
 
 import { getLocale, gettext } from "../utils/l10n.js";
-import SearchIcon from "../../node_modules/mdn-minimalist/dinocons/general/search.svg";
+import SearchIcon from "../../dinocons/general/search.svg";
 
 import "./search-header.scss";
 
