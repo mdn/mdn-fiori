@@ -59,7 +59,7 @@
     }
   },
   "dependencies": {
-    "mdn-minimalist": "^0.1.46"
+    "mdn-minimalist": "^0.1.48"
   },
   "calavera": {
     "eslint": true
