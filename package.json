@@ -37,7 +37,7 @@
     "babel-loader": "^8.1.0",
     "eslint": "6.x",
     "eslint-config-react-app": "^5.2.1",
-    "eslint-plugin-flowtype": "4.x",
+    "eslint-plugin-flowtype": "5.x",
     "eslint-plugin-import": "2.x",
     "eslint-plugin-jsx-a11y": "6.x",
     "eslint-plugin-react": "7.x",
